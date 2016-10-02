@@ -1,0 +1,59 @@
+/* Filnavn: P1_requirements.css
+   Oppdatert: 14/09/16
+*/
+
+body {
+  width: 850px;
+  margin: 0 auto;
+  background-color: #b5eae8;
+  font-family: "Geneva";
+  color: #6F5A52;
+  }
+
+ figure {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom:20px;
+ }
+
+ section {
+ border: 2px dashed;
+ border-color: #FFA584;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-bottom:20px;
+ }
+
+ header {
+ height: 100px;
+ margin-bottom: 40px;
+ margin-top: 40px;
+
+ }
+
+h2 span {
+ font-size: small;
+}
+
+ ul {
+   padding-left: 18px;
+ }
+
+section>ol>li {
+    margin-bottom: 20px;
+}
+
+.title{
+    display: block;
+    margin-bottom: 10px;
+}
+
+ footer {
+ margin-top: 100px;
+ font-size: 13px;
+ }
+
+img {
+  margin-bottom: 20px;
+}
