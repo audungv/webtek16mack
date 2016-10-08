@@ -1,7 +1,19 @@
 # webtek16mack
 
-Enkle Git/Github "guider"
+[Alle frister](https://docs.google.com/document/d/1bsnCHb3Hz70xM54buKW69KkVUNSBvf2dBQgLB12PSGI/edit?usp=sharing)
 
-https://guides.github.com/activities/hello-world/
+###Frister til 16.10.2016
 
-https://guides.github.com/introduction/flow/
+**Kim:**
+- [ ] toastmaster.html
+
+**Catriona:**
+- [ ] hjemme_ikon.svg/png
+- [ ] favicon.svg/png
+- [ ] bord.png (?)
+
+**Au-Dung:**
+- [ ] kontakt_oss.html
+
+**Minh Ha:**
+- [ ] index.html
