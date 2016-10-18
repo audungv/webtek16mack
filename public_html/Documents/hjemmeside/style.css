@@ -9,13 +9,18 @@ body {
     text-align: center;
 }
 
+/* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
 }
 
-#kontakt_oss {
+section {
     margin-top: 120px;
+}
+
+/* Innhold på kontakt_oss.hmtl */
+#kontakt_oss {
     width: 400 px;
 }
 
@@ -26,6 +31,7 @@ h1 {
     border-left: solid #000000;
 }
 
+/* Farger for linker */
 a:visited, a:link {
     color: black;
 }
@@ -37,6 +43,7 @@ a:hover {
     color: #b07500;
 }
 
+/* Navigasjonsbar */
 #nav{
     position: fixed;
     width: 100%;
@@ -92,6 +99,7 @@ a:hover {
     display:block;
 }
 
+/* Fotnote */
 footer{
     color: #444444;
     margin: 3px;
