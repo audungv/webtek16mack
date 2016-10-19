@@ -13,7 +13,7 @@
 - [ ] bord.png (?)
 
 **Au-Dung:**
-- [ ] kontakt_oss.html
+- [x] kontakt_oss.html
 
 **Minh Ha:**
 - [ ] index.html
