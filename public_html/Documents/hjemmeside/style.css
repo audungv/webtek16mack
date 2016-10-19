@@ -9,6 +9,8 @@ body {
     text-align: center;
 }
 
+
+
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
@@ -18,6 +20,8 @@ h1 {
 section {
     margin-top: 130px;
 }
+
+
 
 /* Innhold på kontakt_oss.hmtl */
 #kontakt_oss {
@@ -42,6 +46,8 @@ a:hover {
 .active {
     color: #b07500;
 }
+
+
 
 /* Navigasjonsbar */
 #nav{
@@ -98,6 +104,40 @@ a:hover {
     white-space:nowrap;
     display:block;
 }
+
+
+/* RSVP-skjema */
+
+form { 
+    width: 430px;
+    margin: auto;
+    padding: 30px;
+    background-color: #e3cc9f;
+    text-align: left;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+label { 
+    float: left; 
+    width: 140px;
+}
+
+input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] { 
+    width: 280px; 
+    border-width: 1px;
+    border-color: black;
+}
+
+textarea {
+    width: 420px; 
+    border-width: 1px;
+    border-color: black;
+}
+
+
 
 /* Fotnote */
 footer{
