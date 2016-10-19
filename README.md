@@ -20,7 +20,10 @@ Utkast
 - [ ] bord.png (?)
 
 **Au-Dung:**
+<<<<<<< HEAD
+=======
 - [ ] rsvp.html
+>>>>>>> 28d06b8afc9d901e4c444b9ee5f4ff0697d90891
 - [x] kontakt_oss.html
 
 **Minh Ha:**
