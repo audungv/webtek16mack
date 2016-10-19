@@ -7,7 +7,7 @@
 ###Frister til 16.10.2016
 
 **Kim:**
-- [ ] toastmaster.html
+- [x] toastmaster.html
 
 **Catriona:**
 - [ ] hjemme_ikon.svg/png
