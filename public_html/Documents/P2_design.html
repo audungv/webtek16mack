@@ -32,7 +32,7 @@ Filnavn: P2_design.html
 
         <section>
             <h2>3. Hensikt, mål og målgruppe </h2>
-            <p>Nettsidens hensikt er å informere målgruppen, bryllupsgjestene, om bryllupet. Det skal være mulig å få info om paret, praktisk info om vielsen/festen, parets ønskeliste og kontaktinfo til paret, toastmaster og oss. Nettsidens målgruppe er bryllupsgjestene. Ettersom målgruppens erfaringer med pc og internett varierer i stor grad, er målet med nettsiden å gjøre all informasjon vedrørende bryllupet lett tilgjengelig og oversiktlig. </p>
+            <p>Nettsidens hensikt er å informere målgruppen, bryllupsgjestene, om bryllupet. Det skal være mulig å få info om paret, praktisk info om vielsen/festen, parets ønskeliste og kontaktinfo til paret og toastmaster. Nettsidens målgruppe er bryllupsgjestene. Ettersom målgruppens erfaringer med pc og internett varierer i stor grad, er målet med nettsiden å gjøre all informasjon vedrørende bryllupet lett tilgjengelig og oversiktlig. </p>
         </section>
 
         <section>
@@ -40,26 +40,27 @@ Filnavn: P2_design.html
             <p>
                 Navigasjonsstrukturen vi bruker er "clique" der alle tilgjengelige sider er koblet til hverandre. Vi skal bruke en navigasjonsbar med drop-down-meny for å løse dette. På enhver side er navigasjonsbaren alltid synlig slik at man kan nå alle de andre sidene, til og med forsiden.
 
-                Vi velger å bruke denne strukturen fordi vi mener den gir brukeren en god oversikt og muligheten til å raskt (få klikk) kunne navigere seg rundt på siden. Denne strukturen passer godt til nettsiden vår ettersom den bare består av 8-10 sider.
+                Vi velger å bruke denne strukturen fordi vi mener den gir brukeren en god oversikt og muligheten til å raskt (dva med få klikk) kunne navigere seg rundt på siden. Denne strukturen passer godt til nettsiden vår ettersom den bare består av 8-10 sider.
             </p>
 
         </section>
 
        <section>
-            <h2> Layout og utseende</h2>
+            <h2>5.  Layout og utseende</h2>
 
             <p>
               Vil ha en enkel og stilren nettside. Designet skal være enkelt for å gjenspeile kundens ønske om å ha en brukervennlig nettside. Designet skal også være romantisk og avslappet for å gi gjestene et intrykk av at bryllupsdagen skal være en hyggelig dag for både paret og gjestene. Kunden hadde ikke noen spesifikke krav til farge, font og logo, så disse er valgt slik at de passer forsidebildet vi har fått av kunden.
             </p>
 
             <ul>
-                <li>Font: Satisfy 26 px til kundenes navn på forsiden og overskrifter. Geneva til generell tekst (12 px), navigasjonsbar (14px), dropdownmeny (12 px) og dato på forside (14 px).</li>
+                <li>Font: Satisfy 30 px til kundenes navn på forsiden og overskrifter. Georgia 12 px til all annen tekst bortsett fra fotnote som skal være 10 px. </li>
                 <li>Farger
                     <ul>
                         <li>Tekst: svart</li>
-                        <li>Bakgrunn: #f2f3e4 <li>
-                        <li>Navigasjonsbar: hvit </li>
-                        <li>Linker: #dabc80 </li>
+                        <li>Bakgrunn: #f2f3e4 </li>
+                        <li>Navigasjonsbar: hvit, 70% transparent </li>
+                        <li>Linker: #b07500 </li>
+                        <li>Fotnote : #444444</li>
                     </ul>
                 </li>
                 <li>Navigasjonsbar: Er plassert horisontalt på toppen av siden. Når man skroller nedover skal navigasjonsbaren skal alltid være synlig på toppen av siden.
@@ -68,14 +69,14 @@ Filnavn: P2_design.html
 
                 <li>Logo: Logoen skal være en liten forglemmegei, som vi tegner selv, som er plasset midt på nav-baren. Den fungerer som en hjemknapp.</li>
 
-                <li>Fotnote: "Laget av M. Do, K. Duong, C. Tørklep, A. Vuong i emnet IT2805 ved NTNU."</li>
+                <li>Fotnote: "Laget av M. Do, K. Duong, C. Tørklep, A. Vuong i emnet IT2805 ved NTNU.".</li>
             </ul>
 
             <img src="img/mal.png"/>
 
         </section>
 
-        <section>
+        <section id="innhold">
           <h2> Innhold</h2>
             <p>
                 Vår nettside skal bestå av følgende sider:
@@ -83,39 +84,46 @@ Filnavn: P2_design.html
 
             <ol>
                 <li>index.html <br>
-                Hjem-siden skal være minimal og bare bestå av nav-bar, forsidebilde og dato og sted for bryllupet for å gi gjestene et inntrykk av en ryddig side, som samtidig er informativ nok. Kunden ønsket at datoen for bryllupet bare skulle bestå av måned og år slik at fremmede ikke dukker opp på deres store dag. Når man har beveger musepekeren over datoen for bryllupet skal en nedteller ta over plassen til datoen. Denne nedtelleren skal si hvor mange måneder det er igjen til bryllupet og skal ha samme fonttype og størrelse som datoen, men i en annen nyanse.
-                    <img src="img/index.png"/>
+                Hjem-siden skal være minimal og bare bestå av nav-bar, forsidebilde og dato og sted for bryllupet for å gi gjestene et inntrykk av en ryddig side, som samtidig er informativ nok. Kunden ønsket at datoen for bryllupet bare skulle bestå av måned og år slik at fremmede ikke dukker opp på deres store dag. Når man har beveger musepekeren over datoen for bryllupet skal en nedteller ta over plassen til datoene. Denne nedtelleren skal si hvor mange måneder det er igjen til bryllupet og skal ha samme fonttype, farge og størrelse som datoen. <br>
+                <img src="img/index.png"/>
                 </li>
                 <li>var_historie.html<br>
-                    Denne siden skal bestå av en tidslinje med noen få utvalgte datoer, bilder, og hendelser som er viktige for brudeparet. Dette er for at gjestene skal kunne føle seg litt involvert og dermed mer velkomne til brudeparets bryllup. Tidslinjen skal være vertikal og midstilt og hendelsene hendelsene skal ordnes i omvendt kronologisk rekkefølge. Hendelsene skal plasseres annen hver gang på begge sider av tidlinjen for å bruke mindre plass uten å få siden til å se rotete ut.
+                    Denne siden skal bestå av en tidslinje med noen få utvalgte datoer, bilder, og hendelser som er viktige for brudeparet. Dette er for at gjestene skal kunne føle seg litt involvert og dermed mer velkomne til brudeparets bryllup. Tidslinjen skal være vertikal og midstilt og hendelsene skal ordnes i omvendt kronologisk rekkefølge. Hendelsene skal plasseres annen hver gang på begge sider av tidlinjen for å bruke mindre plass uten å få siden til å se rotete ut. <br>
                     <img src="img/var_historie.png"/>
                 </li>
                 <li>vielse.html<br>
-                    Denne siden skal inneholde et kort program for den store dagen, adressen til kirken og en veibeskrivelse for hvordan man kommer dit med bil eller kollektiv transport. Kunden ønsker å ha denne løsningen ettersom slikt informasjon ikke får plass i innbydelsen. Adressen skal vises i en boks til høyre for at gjestene raskt skal kunne finne adressen. Boksen har fargen #d5d5d5. Nederst vises adressen i Google Maps.  Vi velger å bruke Google Maps fremfor et statisk kart fordi Google gjør det mulig å finne veibeskrivelse til kirkens adresse. Vi kommer til å vise tidspunkt for vielsen hvis kunden godtar dette.
+                    Denne siden skal inneholde et kort program for den store dagen, adressen til kirken og en veibeskrivelse for hvordan man kommer dit med bil eller kollektiv transport. Kunden ønsker å ha denne løsningen ettersom slikt informasjon ikke får plass i innbydelsen. Adressen skal vises i en boks til venstre for at gjestene raskt skal kunne finne adressen. Boksen har fargen #e3cc9f. Nederst vises adressen i Google Maps.  Vi velger å bruke Google Maps fremfor et statisk kart fordi Google gjør det mulig å finne veibeskrivelse til kirkens adresse. Vi kommer til å vise tidspunkt for vielsen hvis kunden godtar dette.
+                    <br>
                     <img src="img/vielse.png"/>
                 </li>
                 <li>bryllupsfest.html<br>
-                    Denne siden skal inneholde et kort program for festen, adressen til festlokalet og en veibeskrivelse for hvordan man kommer dit med bil eller kollektiv transport. Kunden ønsker å ha denne løsningen ettersom slikt informasjon ikke får plass i innbydelsen. Adressen skal vises i en boks til høyre for at gjestene raskt skal kunne finne adressen. Boksen har fargen #d5d5d5. Nederst vises adressen i Google Maps.  Vi velger å bruke Google Maps fremfor et statisk kart fordi Google gjør det mulig å finne veibeskrivelse til festlokalets adresse. Vi kommer til å vise tidspunkt for vielsen hvis kunden godtar dette.
+                    Denne siden skal inneholde et kort program for festen, adressen til festlokalet og en veibeskrivelse for hvordan man kommer dit med bil eller kollektiv transport. Ellers er designet helt likt som vielse.html.
+                    <br>
                     <img src="img/bryllupsfest.png"/>
                 </li>
                 <li>meny.html<br>
                     Enkel side med menyen for bryllupsfesten. Det skal være mulighet for gjestene å se hvilke allergener som finnes i hver rett. Under RSVP kan gjestene deretter si i fra om hva de er allergiske mot slik at brudeparet skal kunne tilpasse maten best mulig.
+                    <br>
                     <img src="img/meny.png"/>
                 </li>
                 <li>onskeliste.html<br>
-                  Kunden skal ikke bruke bryllupslister fra bestemte butikker og vil derfor ha ønskeliste på denne siden for at gjester kan se hva de ønsker seg. Hvert ønske skal ha bilde, navn, modell, farge, størrelse, antall og evt pris og forslag til hvor det kan kjøpes. Øverst på siden skal kontaktinfo til brudens mor være synlig slik at gjester skal kunne registrere ønsker.
+                  Kunden skal ikke bruke bryllupslister fra bestemte butikker og vil derfor ha ønskeliste på denne siden for at gjester kan se hva de ønsker seg. Hvert ønske skal ha bilde, navn, modell, farge, størrelse, antall og evt pris og forslag til hvor det kan kjøpes. Øverst på siden skal kontaktinfo (navn, tlf, e-post) til en bekjent av paret være synlig slik at gjester skal kunne registrere ønsker.
+                  <br>  
                   <img src="img/onskeliste.png"/>
                 </li>
                 <li>rsvp.html<br>
-                  Denne siden består at et skjema der gjestene skal registrere om de kommer eller ikke kommer til vielsen og festen. Skjemaet har fargen #d5d5d5. Det er mulig å registrere matallergier. Om du registrerer svar for din familie eller partner, fyller du også inn hvilke andre gjester som kommer. Når man trykker send, vil innputdata automatisk legges til i et Google spreadsheet-dokument som kunden har tilgang til. Selv om det selvfølgelig er mulig å si i fra til brudeparet at man kommer på andre måter enn å bruke dette skjemaet, brukes det for unngå mest mulig jobb for brudeparet.
+                  Denne siden består at et skjema der gjestene skal registrere om de kommer eller ikke kommer til vielsen og festen. Skjemaet har fargen #e3cc9f. Det er mulig å registrere matallergier. Om du registrerer svar for din familie eller partner, fyller du også inn hvilke andre gjester som kommer. Når man trykker send, vil innputdata automatisk legges til i et Google spreadsheet-dokument som kunden har tilgang til. Selv om det selvfølgelig er mulig å si i fra til brudeparet at man kommer på andre måter enn å bruke dette skjemaet, brukes det for unngå mest mulig jobb for brudeparet.
+                    <br>    
                   <img src="img/rsvp.png"/>
                 </li>
                 <li>toastmaster.html<br>
                     Enkel side med kort info om hvem man kontakter (navn, tlf, e-post) hvis man vil holde tale i bryllupet. Slik vil kunden ha det for å kunne selv kunne vite hvor mye tid de må sette av til taler.
+                    <br>
                     <img src="img/toastmaster.png"/>
                 </li>
                 <li>kontakt_oss.html<br>
                     Enkel side med telefonnummer og e-postadresse til brudeparet i tilfelle gjestene lurer på noe mer.
+                    <br>
                     <img src="img/kontakt_oss.png"/>
                 </li>
 
@@ -139,12 +147,12 @@ Filnavn: P2_design.html
         <section>
           <h2>8. Plan </h2> <!--8.Plan-->
             <div> <!--Filstruktur-->
-              <h3>Fil struktur</h3>
+              <h3>Filstruktur</h3>
                 <h4>html-filer</h4>
                   <ul>
                     <li>index.html</li>
                     <li>var_historie.html</li>
-                    <li><s>praktisk_info</s></li>
+                    <li>praktisk_info/</li>
                       <ul>
                         <li>vielse.html</li>
                         <li>bryllupsfest.html</li>
@@ -211,13 +219,6 @@ Filnavn: P2_design.html
                       <td>Tidslinje</td>
                       <td>Kim</td>
                       <td>23.10.2016</td>
-                    </tr>
-
-                    <tr>
-                      <td><s>praktisk_info</s></td>
-                      <td>Knapp som har drop down meny (java)</td>
-                      <td></td>
-                      <td></td>
                     </tr>
 
                     <tr>
