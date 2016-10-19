@@ -20,7 +20,7 @@ Utkast
 - [ ] bord.png (?)
 
 **Au-Dung:**
-- [ ] rsvp.html
+- [x] rsvp.html
 - [x] kontakt_oss.html
 
 **Minh Ha:**
@@ -30,3 +30,5 @@ Utkast
 
 ###To do list:
 - Croppe forside bilde til riktig størrelse
+- Fotnoten flytter seg ikke når sidens innhold blir for stor
+- Vil ikke at menyen skal "breake" når nettleseren blir for liten.
