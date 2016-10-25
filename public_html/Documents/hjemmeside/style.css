@@ -49,7 +49,7 @@ a:hover {
 
 
 
-/* Navigasjonsbar */
+/* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
 #nav{
     position: fixed;
     width: 100%;
