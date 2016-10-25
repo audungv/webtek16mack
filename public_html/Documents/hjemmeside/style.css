@@ -53,10 +53,10 @@ a:hover {
 #nav{
     position: fixed;
     width: 100%;
-    top: 0; 
+    top: 0;
     margin:0;
     padding:0;
-    text-align:center; 
+    text-align:center;
     list-style:none;
     background-color: rgba(255,255,255,0.7);
 }
@@ -71,7 +71,7 @@ a:hover {
     display: inline-block;
     text-decoration: none;
 }
-		
+
 #nav ul{
     position:absolute;
     left:-9999px;
@@ -108,31 +108,31 @@ a:hover {
 
 /* RSVP-skjema */
 
-form { 
+form {
     width: 430px;
     margin: auto;
     padding: 30px;
     background-color: #e3cc9f;
     text-align: left;
-    
+
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
 }
 
-label { 
-    float: left; 
+label {
+    float: left;
     width: 140px;
 }
 
-input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] { 
-    width: 280px; 
+input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+    width: 280px;
     border-width: 1px;
     border-color: black;
 }
 
 textarea {
-    width: 420px; 
+    width: 420px;
     border-width: 1px;
     border-color: black;
 }
@@ -147,3 +147,19 @@ footer{
     bottom: 0;
     right: 0;
 }
+
+/*Minh Ha's CSS*/
+.beliggenhet{
+  margin: auto;
+  width: 1000px;
+}
+#boks{
+  border-collapse: collapse;
+}
+td,tr{
+  width: 250px;
+  border: 3px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+/*Minh Ha's CSS end*/
