@@ -28,7 +28,7 @@ section {
     width: 400 px;
 }
 
-#kontakt_oss p, #toastmaster p {
+#kontakt_oss p, #toastmaster p, #meny div {
     margin-left: 35%;
     padding-left: 30px;
     text-align: left;
@@ -155,13 +155,30 @@ footer{
   width: 1000px;
     
 }
-#boks{
-  border-collapse: collapse;
+
+.beliggenhet p{
+  text-align: left;
+  margin-left: 100px;
 }
-td,tr{
+
+table{
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+#info td,#info tr{
   width: 250px;
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
 }
+#info{
+  margin: 1em 0em 1em 1em
+  width: 50%;
+  float: left;
+}
+#mapVielse,#mapFest {/*111. ndre plassering*/
+  height: 400px;
+  width: 100%;
+ }
 /*Minh Ha's CSS end*/
