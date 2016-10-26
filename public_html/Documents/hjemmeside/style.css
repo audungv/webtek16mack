@@ -160,6 +160,7 @@ footer{
 table{
   border-collapse: collapse;
 }
+
 td,tr{
   width: 250px;
   border: 3px solid;
