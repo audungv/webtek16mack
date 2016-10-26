@@ -153,6 +153,12 @@ footer{
   margin: auto;
   width: 1000px;
 }
+
+.beliggenhet p{
+  text-align: left;
+  margin-left: 100px;
+}
+
 #boks{
   border-collapse: collapse;
 }
@@ -161,5 +167,10 @@ td,tr{
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
+}
+.info{
+  margin: 1em 0em 1em 1em
+  width: 50%;
+  float: left;
 }
 /*Minh Ha's CSS end*/
