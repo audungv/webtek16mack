@@ -3,7 +3,7 @@
     <head>
         <title>Vielse</title>
         <meta charset="utf-8" />
-        <link href="style.css" rel="stylesheet">
+        <!-- kommentar --><link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
@@ -36,18 +36,18 @@
               Fra Oslo, følg E18 i retning Kristiansand og ta avkjøringen til Sandvika. Følg E16 gjennom Sandvika i retning Hønefoss og ta av til Lommedalen og Bærums Verk. Fra denne avkjøringen, følg Lommedalsveien hele veien (5-10min), forbi Bærums Verk, så vil Mølladammen skole og Lommedalen kirke tydlige kunne sees på høyre hånd.
             </p>
 
-            <div id="map"></div>
+            <div id="mapVielse"></div>
         </section>
-
 
         <!-- Fotnote -->
         <div id="footer"></div>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <!-- Google maps script, 111. HUSK Å ENDRE API -->
         <script src="googleMaps.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBioWPaSFRSBNf25IdcAm8fqjglrgSAlZQ&callback=initMap"
-        async defer>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBioWPaSFRSBNf25IdcAm8fqjglrgSAlZQ&callback=vielseMap">
         </script>
     </body>
 </html>
