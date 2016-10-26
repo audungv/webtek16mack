@@ -175,9 +175,8 @@ table{
   width: 50%;
   float: left;
 }
-
-#map {
-       height: 400px;
-       width: 100%;
-      }
+#mapVielse,#mapFest {/*111. ndre plassering*/
+  height: 400px;
+  width: 100%;
+ }
 /*Minh Ha's CSS end*/
