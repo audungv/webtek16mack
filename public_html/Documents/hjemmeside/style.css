@@ -159,20 +159,23 @@ footer{
   margin-left: 100px;
 }
 
-#boks{
-  border-collapse: collapse;
-}
-
 table{
   border-collapse: collapse;
+  margin: 10px;
 }
-td,tr{
+/*td,tr{
+  width: 250px;
+  border: 3px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+}*/
+#info td,#info tr{
   width: 250px;
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
 }
-.info{
+#info{
   margin: 1em 0em 1em 1em
   width: 50%;
   float: left;
