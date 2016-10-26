@@ -23,7 +23,7 @@ PURPOSE: Svarskjema -->
         <!-- Sidens innhold -->
         <section id="rsvp">
             <h1> RSVP </h1>
-            <form action="rsvpSendt.html">
+            <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
                 <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\s]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
                 <label>Telefon: </label>        <input type="text" name="phone" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom." required><br>
                 <label>E-mail: </label>         <input type="email" name="email" required><br>
@@ -40,8 +40,14 @@ PURPOSE: Svarskjema -->
                 
                 <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
                 <br>
-                <input type="submit" value="Send"/>
+                <button>Send</button>
             </form>
+            
+            <div style="display:none;" id="thankyou_message">
+                <p>Takk for ditt svar!</p>
+            </div>
+            
+            
         </section>
 
 
@@ -49,8 +55,10 @@ PURPOSE: Svarskjema -->
         <div id="footer"></div>
         
         
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
         
     </body>
 </html>
