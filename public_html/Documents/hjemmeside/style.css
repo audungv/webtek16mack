@@ -23,7 +23,7 @@ section {
 
 
 
-/* Innhold på kontakt_oss.hmtl */
+/* Innhold på kontakt_oss.html */
 #kontakt_oss {
     width: 400 px;
 }
@@ -151,7 +151,9 @@ footer{
 /*Minh Ha's CSS*/
 .beliggenhet{
   margin: auto;
+  margin-top: 130px;
   width: 1000px;
+    
 }
 #boks{
   border-collapse: collapse;
