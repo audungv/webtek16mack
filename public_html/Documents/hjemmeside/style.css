@@ -28,7 +28,7 @@ section {
     width: 400 px;
 }
 
-#kontakt_oss p, #toastmaster p {
+#kontakt_oss p, #toastmaster p, #meny div {
     margin-left: 35%;
     padding-left: 30px;
     text-align: left;
