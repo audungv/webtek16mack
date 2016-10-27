@@ -7,7 +7,7 @@
 ###Frister til 06.11.2016
 
 **Kim:**
-- [ ] var_historie.html
+- [x] var_historie.html
 - [x] toastmaster.html
 - [ ] drop_down_meny.js
 
