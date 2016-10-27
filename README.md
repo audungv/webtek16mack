@@ -27,8 +27,8 @@ Utkast
 - [x] insert_data.js
 
 **Minh Ha:**
-- [ ] vielse.html
-- [ ] bryllupsfest.html
+- [x] vielse.html
+- [x] bryllupsfest.html
 - [x] index.html
 - [ ] countdown.js
 
