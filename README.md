@@ -12,8 +12,8 @@
 - [ ] drop_down_meny.js
 
 **Catriona:**
-- [ ] meny.html
-- [ ] onskeliste.html
+- [x] meny.html
+- [x] onskeliste.html
 - [ ] form_validering.js
 
 Utkast
