@@ -7,7 +7,7 @@
 ###Frister til 06.11.2016
 
 **Kim:**
-- [ ] drop_down_meny.js
+- [x] drop_down_meny.js
 
 **Catriona:**
 - [ ] form_validering.js
