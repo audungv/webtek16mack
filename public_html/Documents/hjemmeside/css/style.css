@@ -60,7 +60,7 @@ a:hover {
 
 #nav li{
   position:relative;
-  display:inline;
+  display:inline-block;
 }
 
 #nav a{

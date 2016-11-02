@@ -7,14 +7,11 @@
 ###Frister til 06.11.2016
 
 **Kim:**
-- [ ] drop_down_meny.js
 
 **Catriona:**
 - [ ] form_validering.js
 
 Utkast
-- [x] hjemme_ikon.svg/png
-- [x] favicon.svg/png
 - [ ] bord.png (?)
 
 **Au-Dung:**
@@ -42,3 +39,6 @@ Utkast
 - [x] vielse.html
 - [x] bryllupsfest.html
 - [x] index.html
+- [x] drop_down_meny.js
+- [x] hjemme_ikon.svg/png
+- [x] favicon.svg/png
