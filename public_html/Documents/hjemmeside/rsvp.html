@@ -23,34 +23,37 @@ PURPOSE: Svarskjema -->
         <!-- Sidens innhold -->
         <section id="rsvp">
             <h1> RSVP </h1>
-            <form action="rsvpSendt.html">
-                <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\s]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
+            <form name="rsvpForm" action="rsvpSendt.html" onfocusout="return validateForm()">
+                <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
                 <label>Telefon: </label>        <input type="text" name="phone" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom." required><br>
                 <label>E-mail: </label>         <input type="email" name="email" required><br>
-                <label>Tar meg seg: </label>    <input type="text" name="guests"><br>
+                <label>Tar med seg: </label>    <input type="text" name="guests"><br>
                 <br>
-                
+
                 Kommer til: <br>
                 <label>Vielsen </label>         <input type="radio" name="wedding" value="true" required> Ja
                                                 <input type="radio" name="wedding" value="false"> Nei<br>
                 <label>Bryllupsfesten </label>  <input type="radio" name="party" value="true" required> Ja
                                                 <input type="radio" name="party" value="false"> Nei<br>
                 <br>
-                
-                
+
+
                 <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
                 <br>
-                <input type="submit" value="Send"/>
+                <input type="submit" id="sub" value="Send"/>
             </form>
+            <br>
+            <div id="feil"></div>
         </section>
 
 
         <!-- Fotnote -->
         <div id="footer"></div>
-        
-        
+
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        
+        <script type="text/javascript" src="form_validering.js"></script>
+
     </body>
 </html>
