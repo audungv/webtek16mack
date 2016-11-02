@@ -8,7 +8,7 @@ PURPOSE: Svarskjema -->
     <head>
         <title>RSVP</title>
         <meta charset="utf-8" />
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
@@ -29,36 +29,36 @@ PURPOSE: Svarskjema -->
                 <label>E-mail: </label>         <input type="email" name="email" required><br>
                 <label>Tar meg seg: </label>    <input type="text" name="guests"><br>
                 <br>
-                
+
                 Kommer til: <br>
                 <label>Vielsen </label>         <input type="radio" name="wedding" value="true" required> Ja
                                                 <input type="radio" name="wedding" value="false"> Nei<br>
                 <label>Bryllupsfesten </label>  <input type="radio" name="party" value="true" required> Ja
                                                 <input type="radio" name="party" value="false"> Nei<br>
                 <br>
-                
-                
+
+
                 <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
                 <br>
                 <button>Send</button>
             </form>
-            
+
             <div style="display:none;" id="thankyou_message">
                 <p>Takk for ditt svar!</p>
             </div>
-            
-            
+
+
         </section>
 
 
         <!-- Fotnote -->
         <div id="footer"></div>
-        
-        
+
+
         <!-- Submit the Form to Google Using "AJAX" -->
         <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
-        
+
     </body>
 </html>

@@ -9,8 +9,6 @@ body {
     text-align: center;
 }
 
-
-
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
@@ -20,8 +18,6 @@ h1 {
 section {
     margin-top: 130px;
 }
-
-
 
 /* Innhold på kontakt_oss.html */
 #kontakt_oss {
@@ -148,17 +144,18 @@ footer{
     right: 0;
 }
 
-/*Minh Ha's CSS*/
+/*Minh Ha's CSS, vielse og bryllupsfest*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
   width: 1000px;
-    
+
 }
 
 .beliggenhet p{
   text-align: left;
-  margin-left: 100px;
+  margin: 0px 200px 200px 0px;
+  padding-left: 100px;
 }
 
 table{
@@ -168,10 +165,24 @@ table{
 
 #info td,#info tr{
   width: 250px;
+  height: 55px;
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  z-index: -1;
 }
+
+#info img{
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  top: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
 #info{
   margin: 1em 0em 1em 1em
   width: 50%;
