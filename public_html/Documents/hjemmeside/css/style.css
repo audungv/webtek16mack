@@ -9,8 +9,6 @@ body {
     text-align: center;
 }
 
-
-
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
@@ -21,9 +19,7 @@ section {
     margin-top: 130px;
 }
 
-
-
-/* Innhold på kontakt_oss.hmtl */
+/* Innhold på kontakt_oss.html */
 #kontakt_oss {
     width: 400 px;
 }
@@ -51,25 +47,26 @@ a:hover {
 
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
 #nav{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    margin:0;
-    padding:0;
-    text-align:center;
-    list-style:none;
-    background-color: rgba(255,255,255,0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin:0;
+  padding:0;
+  text-align:center;
+  list-style:none;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 30
 }
 
 #nav li{
-    position:relative;
-    display:inline;
+  position:relative;
+  display:inline;
 }
 
 #nav a{
-    padding: 20px 16px;
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  padding: 20px 16px;
+  text-decoration: none
 }
 
 #nav ul{
@@ -86,8 +83,9 @@ a:hover {
     display:block;
 }
 
-#nav li:hover ul{
-    left:0;
+#nav li:hover ul a:hover{
+    background-color: #dabc80;
+    color: white;
 }
 
 #nav li:hover ul a{
@@ -105,6 +103,24 @@ a:hover {
     display:block;
 }
 
+#nav div{
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  background: #EAEBD8;
+  border: 1px solid #5970B2
+}
+
+#nav div a{
+  white-space:nowrap;
+  display:block;
+}
+
+#nav div a:hover{
+  background: #49A3FF;
+  color: #FFF
+}
 
 /* RSVP-skjema */
 
@@ -148,13 +164,18 @@ footer{
     right: 0;
 }
 
-/*Minh Ha's CSS*/
+/*Minh Ha's CSS, vielse og bryllupsfest*/
 .beliggenhet{
   margin: auto;
+  margin-top: 130px;
   width: 1000px;
+
 }
-#boks{
-  border-collapse: collapse;
+
+.beliggenhet p{
+  text-align: left;
+  margin: 0px 200px 200px 0px;
+  padding-left: 100px;
 }
 
 table{
@@ -163,15 +184,33 @@ table{
 
 #info td,#info tr{
   width: 250px;
+  height: 55px;
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  z-index: -1;
 }
+
+#info img{
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  top: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
 #info{
   margin: 1em 0em 1em 1em
   width: 50%;
   float: left;
 }
+#mapVielse,#mapFest {/*111. ndre plassering*/
+  height: 400px;
+  width: 100%;
+ }
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
