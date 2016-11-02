@@ -214,13 +214,29 @@ table{
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
+#onsketable{
+  float: left;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
 #onsketable td, #onsketable tr{
   width: 250px;
-  border: 3px solid;
-  padding: 40px;
+  border: none;
+  padding: 20px;
 }
 
 .beliggenhet p{
   margin-bottom: 50px;
 }
-/* Cat har skrevet mer, men ikke inni her end*/
+
+#onskebilder{
+  float:right;
+  margin-right: 90px;
+}
+
+#onskebilder td, #onskebilder tr{
+  width: 250px;
+  border: none;
+  padding: 50px;
+}
