@@ -47,25 +47,26 @@ a:hover {
 
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
 #nav{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    margin:0;
-    padding:0;
-    text-align:center;
-    list-style:none;
-    background-color: rgba(255,255,255,0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin:0;
+  padding:0;
+  text-align:center;
+  list-style:none;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 30
 }
 
 #nav li{
-    position:relative;
-    display:inline;
+  position:relative;
+  display:inline-block;
 }
 
 #nav a{
-    padding: 20px 16px;
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  padding: 20px 16px;
+  text-decoration: none
 }
 
 #nav ul{
@@ -82,8 +83,9 @@ a:hover {
     display:block;
 }
 
-#nav li:hover ul{
-    left:0;
+#nav li:hover ul a:hover{
+    background-color: #dabc80;
+    color: white;
 }
 
 #nav li:hover ul a{
@@ -101,6 +103,24 @@ a:hover {
     display:block;
 }
 
+#nav div{
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  background: #EAEBD8;
+  border: 1px solid #5970B2
+}
+
+#nav div a{
+  white-space:nowrap;
+  display:block;
+}
+
+#nav div a:hover{
+  background: #49A3FF;
+  color: #FFF
+}
 
 /* RSVP-skjema */
 
@@ -160,7 +180,6 @@ footer{
 
 table{
   border-collapse: collapse;
-  margin: 10px;
 }
 
 #info td,#info tr{
@@ -193,3 +212,31 @@ table{
   width: 100%;
  }
 /*Minh Ha's CSS end*/
+
+/* Cat's CSS*/
+#onsketable{
+  float: left;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+#onsketable td, #onsketable tr{
+  width: 250px;
+  border: none;
+  padding: 20px;
+}
+
+.beliggenhet p{
+  margin-bottom: 50px;
+}
+
+#onskebilder{
+  float:right;
+  margin-right: 90px;
+}
+
+#onskebilder td, #onskebilder tr{
+  width: 250px;
+  border: none;
+  padding: 50px;
+}
