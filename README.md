@@ -21,7 +21,7 @@ Utkast
 - [x] countdown.js
 
 ###To do list:
-- Croppe forside bilde til riktig størrelse
+- [ ] Croppe bilder til riktig størrelse
 - Fotnoten flytter seg ikke når sidens innhold blir for stor (Au-Dung prøver å fikse dette)
 - Vil ikke at menyen skal "breake" når nettleseren blir for liten (Au-Dung prøver å fikse dette)
 - Fikse innholdet i nettsiden, slik at den shrinker med browseren når man forminsker vinduet. (Minh Ha)
