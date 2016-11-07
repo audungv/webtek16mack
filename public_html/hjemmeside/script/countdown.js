@@ -1,17 +1,20 @@
-//Kode modifisert fra: http://stackoverflow.com/questions/9335140/how-to-countdown-to-a-date
 var counter = document.getElementById('countdown')
-var end = new Date(Date.UTC(2017,03,08,15));
-//måned: 0-11, dag: 1-31, tid: 0-23
-var day = 1000*60*60*24; //millisekunder*sekunder*minutter*timer
-
+var end = new Date(2017,04,08,04,00);
+var day = 1000*60*60*24; //sekunder*minutter*timer*dager
+var timer; //??
 
 function showRemaining() {
   var now = new Date();
   var distance = end - now;
   if (distance < 0) {
-		counter.innerHTML = 'Vielsen var den 8. april 2017';
+
+  clearInterval(timer); //??
+  counter.innerHTML = 'Vielsen var den 8. april 2017';
+
+  return;
   }
-	var days = Math.floor(distance/day);//runder nummeret
-	counter.innerHTML = days + ' dager igjen til vielsen!';
+var days = Math.floor(distance / day);
+counter.innerHTML = days + ' dager igjen!';
 }
-showRemaining();
+
+timer = setInterval(showRemaining, 1000); //??

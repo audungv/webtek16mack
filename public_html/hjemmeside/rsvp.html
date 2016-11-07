@@ -8,21 +8,21 @@ PURPOSE: Svarskjema -->
     <head>
         <title>RSVP</title>
         <meta charset="utf-8" />
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <link rel="icon"  href="img/favikon.png" type="image/png">
         <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
-
-
     <body>
 
-        <!-- Navigasjonsbar -->
-        <div id="navbar"></div>
+        <div id="wrapper">
+
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
 
 
-        <!-- Sidens innhold -->
-        <section id="rsvp">
+           <!-- Sidens innhold -->
+           <section id="rsvp">
             <h1> RSVP </h1>
             <form id="gform" name="rsvpForm"  onfocusout="return validateForm()" method="post" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
                 <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
@@ -53,15 +53,15 @@ PURPOSE: Svarskjema -->
         </section>
 
 
-        <!-- Fotnote -->
-        <div id="footer"></div>
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
 
+        </div>
 
         <!-- Submit the Form to Google Using "AJAX" -->
         <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
         <script type="text/javascript" src="script/form_validering.js"></script>
-
     </body>
 </html>
