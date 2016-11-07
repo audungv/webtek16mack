@@ -1,52 +1,30 @@
-* {
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+    min-width: 800px;
+    background-color: #f2f3e4;
     font-family: georgia;
     font-size: 16px;
-}
-
-body, html{
-    margin: 0;
-    padding: 0;
-    background-color: #f2f3e4;
     text-align: center;
 }
-
-.wrapper{
-    position: relative;
-    min-height: 100%;
-    width: 100%;
-}
-
 
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
 }
-
-section {
-    margin-top: 130px;
+#wrapper {
+	min-height:100%;
     
-}
-
-
-
-/* Innhold på kontakt_oss.html */
-#kontakt_oss {
-    width: 400 px;
-}
-
-#kontakt_oss p, #toastmaster p, #meny div {
-    margin-left: 35%;
-    padding-left: 30px;
-    text-align: left;
-    border-left: solid #000000;
+	position:relative;
 }
 
 /* Farger for linker */
 a:visited, a:link {
     color: black;
 }
-
 a:hover {
     color: #b07500;
 }
@@ -54,12 +32,14 @@ a:hover {
     color: #b07500;
 }
 
-
-
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
+#header {
+	padding:1px;
+}
 #nav{
     position: fixed;
     width: 100%;
+    min-width: 800px;
     top: 0;
     margin:0;
     padding:0;
@@ -112,9 +92,24 @@ a:hover {
     display:block;
 }
 
+section {
+    margin-top: 130px;
+	padding-bottom:30px; /* Height of the footer element */
+     /* NB: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
+}
+
+/* Innhold på kontakt_oss.html */
+#kontakt_oss {
+    width: 400 px;
+}
+#kontakt_oss p, #toastmaster p, #meny div {
+    margin-left: 35%;
+    padding-left: 30px;
+    text-align: left;
+    border-left: solid #000000;
+}
 
 /* RSVP-skjema */
-
 form {
     width: 430px;
     margin: auto;
@@ -126,53 +121,35 @@ form {
     border-style: solid;
     border-radius: 5px;
 }
-
 label {
     float: left;
     width: 140px;
 }
-
 input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
     border-width: 1px;
     border-color: black;
 }
-
 textarea {
     width: 420px;
     border-width: 1px;
     border-color: black;
 }
 
-
-
-/* Fotnote */
-footer{
-    color: #444444;
-    margin: 3px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 /*Minh Ha's CSS*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
-  width: 1000px;
-    
+  width: 1000px;   
 }
-
 .beliggenhet p{
   text-align: left;
   margin-left: 100px;
 }
-
 table{
   border-collapse: collapse;
   margin: 10px;
 }
-
 #info td,#info tr{
   width: 250px;
   border: 3px solid;
@@ -189,3 +166,32 @@ table{
   width: 100%;
  }
 /*Minh Ha's CSS end*/
+
+footer {
+	/*background:#ffab62;*/
+    color: #444444;
+    margin: 3px;
+	/*width:100%;
+	height:100px;*/
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px){
+    body{
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    section{
+        font-size: 24px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape){
+    section{
+        font-size: 20px;
+    }
+    
+}
