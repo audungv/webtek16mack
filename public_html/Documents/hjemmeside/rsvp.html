@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <!--
-FILE NAME: rsvp.html
-WRITTEN BY: Au-Dung Vuong
+FILE NAME: mal.html
+WRITTEN BY:
 WHEN: Oktober 2016
-PURPOSE: Svarskjema -->
+PURPOSE:  -->
 <html>
     <head>
         <title>RSVP</title>
         <meta charset="utf-8" />
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
-
-
     <body>
-
-        <!-- Navigasjonsbar -->
-        <div id="navbar"></div>
-
-
-        <!-- Sidens innhold -->
-        <section id="rsvp">
+        
+        <div id="wrapper">
+           
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
+		
+           
+           <!-- Sidens innhold -->
+                   <section id="rsvp">
             <h1> RSVP </h1>
-            <form name="rsvpForm" action="rsvpSendt.html" onfocusout="return validateForm()">
-                <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
 
             <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
                 <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\s]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
@@ -46,28 +44,23 @@ PURPOSE: Svarskjema -->
 
                 <input type="submit" id="sub" value="Send"/>
             </form>
-            <br>
-            <div id="feil"></div>
-
-                <button>Send</button>
-            </form>
 
             <div style="display:none;" id="thankyou_message">
                 <p>Takk for ditt svar!</p>
             </div>
 
         </section>
+           
+           
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
 
-
-        <!-- Fotnote -->
-        <div id="footer"></div>
-
-
-        <!-- Submit the Form to Google Using "AJAX" -->
+        </div>
+        
+                <!-- Submit the Form to Google Using "AJAX" -->
         <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
         <script type="text/javascript" src="script/form_validering.js"></script>
-
     </body>
 </html>

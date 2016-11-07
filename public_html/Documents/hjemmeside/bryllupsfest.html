@@ -1,19 +1,27 @@
 <!DOCTYPE html>
+<!--
+FILE NAME: mal.html
+WRITTEN BY:
+WHEN: Oktober 2016
+PURPOSE:  -->
 <html>
     <head>
         <title>Bryllupsfest</title>
         <meta charset="utf-8" />
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
     <body>
-
-        <!-- Navigasjonsbar -->
-        <div id="navbar"></div>
         
-        <!-- Sidens innhold -->
-            <section class="beliggenhet">
+        <div id="wrapper">
+           
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
+		
+           
+           <!-- Sidens innhold -->
+           <section class="beliggenhet">
               <h1>Bryllupsfest</h1>
               <aside id="info">
                 <table>
@@ -28,14 +36,16 @@
               <p>
                 Kjør E6 fra Trondheim i retning Oslo. Etter Melhus, ta av til Kvål og kjør gjennom Kvål sentrum. Umiddelbart etter sentrum, ta av til høyre inn på Bennaveien, og følg denne i 2-5 minutter før dere ankommer Haugen Gård på venstre side av veien.
               </p>
-
+               
               <div id="mapFest"></div>
             </section>
+           
+           
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
 
-
-        <!-- Fotnote -->
-        <div id="footer"></div>
-
+        </div>
+        
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
         <!-- Google maps script, 111. HUSK Å ENDRE API -->

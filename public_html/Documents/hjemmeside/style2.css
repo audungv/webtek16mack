@@ -136,36 +136,83 @@ textarea {
     border-color: black;
 }
 
-/*Minh Ha's CSS*/
+/*Minh Ha's CSS, vielse og bryllupsfest*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
-  width: 1000px;   
+  width: 1000px;
+
 }
+
 .beliggenhet p{
   text-align: left;
-  margin-left: 100px;
+  margin: 0px 200px 200px 0px;
+  padding-left: 100px;
 }
+
 table{
   border-collapse: collapse;
-  margin: 10px;
 }
+
 #info td,#info tr{
   width: 250px;
+  height: 55px;
   border: 3px solid;
   padding: 15px;
   margin-bottom: 15px;
+  text-align: left;
+  position: relative;
 }
+
+#info img{
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  top: 20px;
+  position: absolute;
+}
+
 #info{
   margin: 1em 0em 1em 1em
   width: 50%;
   float: left;
 }
 #mapVielse,#mapFest {/*111. ndre plassering*/
-  height: 400px;
-  width: 100%;
+    height: 400px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
  }
 /*Minh Ha's CSS end*/
+
+/* Cat's CSS*/
+#onsketable{
+  float: left;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+#onsketable td, #onsketable tr{
+  width: 250px;
+  border: none;
+  padding: 20px;
+}
+
+.beliggenhet p{
+  margin-bottom: 50px;
+}
+
+#onskebilder{
+  float:right;
+  margin-right: 90px;
+}
+
+#onskebilder td, #onskebilder tr{
+  width: 250px;
+  border: none;
+  padding: 50px;
+}
+
 
 footer {
 	/*background:#ffab62;*/
