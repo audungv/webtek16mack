@@ -18,7 +18,7 @@ Utkast
 
 
 **Minh Ha:**
-- [ ] countdown.js
+- [x] countdown.js
 
 ###To do list:
 - Croppe forside bilde til riktig størrelse
