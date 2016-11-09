@@ -7,32 +7,38 @@
 ###Frister til 06.11.2016
 
 **Kim:**
-- [ ] var_historie.html
-- [x] toastmaster.html
-- [ ] drop_down_meny.js
 
 **Catriona:**
-- [ ] meny.html
-- [ ] onskeliste.html
 - [ ] form_validering.js
 
 Utkast
-- [x] hjemme_ikon.svg/png
-- [x] favicon.svg/png
 - [ ] bord.png (?)
 
 **Au-Dung:**
-- [x] rsvp.html
-- [x] kontakt_oss.html
-- [x] insert_data.js
+
 
 **Minh Ha:**
-- [x] vielse.html
-- [x] bryllupsfest.html
-- [x] index.html
-- [ ] countdown.js
+- [x] countdown.js
 
 ###To do list:
 - Croppe forside bilde til riktig størrelse
 - Fotnoten flytter seg ikke når sidens innhold blir for stor (Au-Dung prøver å fikse dette)
 - Vil ikke at menyen skal "breake" når nettleseren blir for liten (Au-Dung prøver å fikse dette)
+- Fikse innholdet i nettsiden, slik at den shrinker med browseren når man forminsker vinduet. (Minh Ha)
+- [ ] meny_nav_bar.part
+- [ ] style.css
+
+###Ferdig
+- [x] var_historie.html
+- [x] toastmaster.html
+- [x] meny.html
+- [x] onskeliste.html
+- [x] rsvp.html
+- [x] kontakt_oss.html
+- [x] insert_data.js
+- [x] vielse.html
+- [x] bryllupsfest.html
+- [x] index.html
+- [x] drop_down_meny.js
+- [x] hjemme_ikon.svg/png
+- [x] favicon.svg/png

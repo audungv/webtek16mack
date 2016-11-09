@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+FILE NAME: rsvp.html
+WRITTEN BY: Au-Dung Vuong
+WHEN: Oktober 2016
+PURPOSE: Svarskjema -->
+<html>
+    <head>
+        <title>RSVP</title>
+        <meta charset="utf-8" />
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon"  href="img/favikon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
+
+
+           <!-- Sidens innhold -->
+           <section id="rsvp">
+            <h1> RSVP </h1>
+            <form id="gform" name="rsvpForm"  onfocusout="return validateForm()" method="post" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
+                <label>Kontaktperson: </label>  <input type="text" name="name" pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
+                <label>Telefon: </label>        <input type="text" name="phone" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom." required><br>
+                <label>E-mail: </label>         <input type="email" name="email" required><br>
+                <label>Tar med seg: </label>    <input type="text" name="guests"><br>
+                <br>
+
+                Kommer til: <br>
+                <label>Vielsen </label>         <input type="radio" name="wedding" value="true" required> Ja
+                                                <input type="radio" name="wedding" value="false"> Nei<br>
+                <label>Bryllupsfesten </label>  <input type="radio" name="party" value="true" required> Ja
+                                                <input type="radio" name="party" value="false"> Nei<br>
+                <br>
+
+
+                <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
+                <br>
+
+                <input type="submit" id="sub" value="Send"/>
+            </form>
+            <br>
+            <div id="feil"></div>
+            <div style="display:none;" id="thankyou_message">
+                <p>Takk for ditt svar!</p>
+            </div>
+
+        </section>
+
+
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/form_validering.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+FILE NAME: bryllupsfest.html
+WRITTEN BY: Minh Ha Do
+WHEN: Oktober 2016
+PURPOSE: Info om bryllupsfest -->
+
+<html>
+    <head>
+        <title>Bryllupsfest</title>
+        <meta charset="utf-8" />
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon"  href="img/favikon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
+
+
+           <!-- Sidens innhold -->
+           <section class="beliggenhet">
+              <h1>Bryllupsfest</h1>
+              <aside id="info">
+                <table>
+                    <tr>
+                        <td><strong>Adresse:</strong>
+                          <br>Bennaveien 7228, Kvål
+                          <img src="img/svg/marker-b-1.svg" alt="Marker"/>
+                        </td>
+                    </tr>
+                </table>
+              </aside>
+              <p>
+                Kjør E6 fra Trondheim i retning Oslo. Etter Melhus, ta av til Kvål og kjør gjennom Kvål sentrum. Umiddelbart etter sentrum, ta av til høyre inn på Bennaveien, og følg denne i 2-5 minutter før dere ankommer Haugen Gård på venstre side av veien.
+              </p>
+
+              <div id="mapFest"></div>
+            </section>
+
+
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+        <!-- Google maps script, 111. HUSK Å ENDRE API -->
+        <script src="script/googleMaps.js"></script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBioWPaSFRSBNf25IdcAm8fqjglrgSAlZQ&callback=bryllupsMap">
+        </script>
+    </body>
+</html>
