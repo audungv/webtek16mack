@@ -1,55 +1,4 @@
-* {
-    font-family: georgia;
-    font-size: 16px;
-}
 
-body, html{
-    margin: 0;
-    padding: 0;
-    background-color: #f2f3e4;
-    text-align: center;
-}
-
-.wrapper{
-    position: relative;
-    min-height: 100%;
-    width: 100%;
-}
-
-/* Overskrift */
-h1 {
-    font-family: 'Satisfy', cursive;
-    font-size: 36px;
-}
-
-section {
-    margin-top: 130px;
-    
-}
-
-/* Innhold på kontakt_oss.html */
-#kontakt_oss {
-    width: 400 px;
-}
-
-#kontakt_oss p, #toastmaster p, #meny div {
-    margin-left: 35%;
-    padding-left: 30px;
-    text-align: left;
-    border-left: solid #000000;
-}
-
-/* Farger for linker */
-a:visited, a:link {
-    color: black;
-}
-
-a:hover {
-    color: #b07500;
-}
-.active {
-    color: #b07500;
-}
 
 
 
@@ -99,11 +48,6 @@ a:hover {
 #nav li:hover ul a{
     text-decoration:none;
     padding: 12px 16px;
-}
-
-#nav li:hover ul a:hover{
-    background-color: #dabc80;
-    color: white;
 }
 
 #nav ul a{
@@ -234,7 +178,7 @@ table{
   padding: 20px;
 }
 
-# onskeliste p{
+#onskeliste p{
   margin-bottom: 50px;
 }
 
