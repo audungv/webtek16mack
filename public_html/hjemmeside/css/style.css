@@ -1,19 +1,12 @@
-* {
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+    min-width: 800px;
+    background-color: #f2f3e4;
     font-family: georgia;
     font-size: 16px;
-}
-
-body, html{
-    margin: 0;
-    padding: 0;
-    background-color: #f2f3e4;
     text-align: center;
-}
-
-.wrapper{
-    position: relative;
-    min-height: 100%;
-    width: 100%;
 }
 
 /* Overskrift */
@@ -21,29 +14,15 @@ h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
 }
-
-section {
-    margin-top: 130px;
-    
-}
-
-/* Innhold på kontakt_oss.html */
-#kontakt_oss {
-    width: 400 px;
-}
-
-#kontakt_oss p, #toastmaster p, #meny div {
-    margin-left: 35%;
-    padding-left: 30px;
-    text-align: left;
-    border-left: solid #000000;
+#wrapper {
+	min-height:100%;
+	position:relative;
 }
 
 /* Farger for linker */
 a:visited, a:link {
     color: black;
 }
-
 a:hover {
     color: #b07500;
 }
@@ -51,19 +30,18 @@ a:hover {
     color: #b07500;
 }
 
-
-
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
+/*Kim #nav*/
 #nav{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0;
+  left: 0;
   position: fixed;
-  width: 100%;
+  right: 0;
   top: 0;
-  margin:0;
-  padding:0;
-  text-align:center;
-  list-style:none;
-  background-color: rgba(255,255,255,0.7);
-  z-index: 30
+  z-index: 1000;
 }
 
 #nav li{
@@ -72,66 +50,63 @@ a:hover {
 }
 
 #nav a{
-  display: inline-block;
-  padding: 20px 16px;
-  text-decoration: none
+  display:inline-block;
+  padding:10px;
 }
 
 #nav ul{
-    position:absolute;
-    left:-9999px;
-    margin:0;
-    padding:0;
-    text-align:left;
-    background-color: rgba(255,255,255,0.9);
-    box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.2);
+  display:block;
+  position:absolute;
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
 }
-
 #nav ul li{
-    display:block;
-}
-
-#nav li:hover ul a:hover{
-    background-color: #dabc80;
-    color: white;
-}
-
-#nav li:hover ul a{
-    text-decoration:none;
-    padding: 12px 16px;
-}
-
-#nav li:hover ul a:hover{
-    background-color: #dabc80;
-    color: white;
-}
-
-#nav ul a{
-    white-space:nowrap;
-    display:block;
-}
-
-#nav div{
-  position: absolute;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-  background: #EAEBD8;
-  border: 1px solid #5970B2
-}
-
-#nav div a{
-  white-space:nowrap;
   display:block;
 }
 
-#nav div a:hover{
-  background: #49A3FF;
-  color: #FFF
+#nav li:hover ul{
+  left:0;
+}
+
+#nav li:hover ul a{
+  text-decoration:none;
+  background:#F8F7EB;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#nav li:hover ul a:hover{
+  text-decoration:none;
+  color: white;
+  background-color: #dabc80;
+}
+#nav ul a{
+  display:block;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+/*Kim #nav end*/
+section {
+    margin-top: 130px;
+	padding-bottom:30px; /* Height of the footer element */
+     /* NB: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
+}
+
+/* Innhold på kontakt_oss.html */
+#kontakt_oss {
+    width: 400 px;
+}
+#kontakt_oss p, #toastmaster p, #meny div {
+    margin-left: 35%;
+    padding-left: 30px;
+    text-align: left;
+    border-left: solid #000000;
 }
 
 /* RSVP-skjema */
-
 form {
     width: 430px;
     margin: auto;
@@ -143,51 +118,34 @@ form {
     border-style: solid;
     border-radius: 5px;
 }
-
 label {
     float: left;
     width: 140px;
 }
-
 input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
     border-width: 1px;
     border-color: black;
 }
-
 textarea {
     width: 420px;
     border-width: 1px;
     border-color: black;
 }
 
-
-
-/* Fotnote */
-footer{
-    color: #444444;
-    margin: 3px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-/*Minh Ha's CSS, vielse og bryllupsfest*/
+/*Minh Ha's CSS*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
   width: 1000px;
-
 }
-
 .beliggenhet p{
   text-align: left;
-  margin: 0px 200px 200px 0px;
-  padding-left: 100px;
+  margin-left: 100px;
 }
-
 table{
   border-collapse: collapse;
+  margin: 10px;
 }
 
 #info td,#info tr{
@@ -201,7 +159,13 @@ table{
   /*z-index: -1;*/
 }
 
-#info img{
+#info{
+  margin: 1em 0em 1em 1em
+  width: 50%;
+  float: left;
+}
+
+.svg{
   width: 50px;
   height: 50px;
   right: 10px;
@@ -210,11 +174,6 @@ table{
   /*z-index: -1;*/
 }
 
-#info{
-  margin: 1em 0em 1em 1em
-  width: 50%;
-  float: left;
-}
 #mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
@@ -222,6 +181,12 @@ table{
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
+#onskeliste{
+  margin: auto;
+  margin-top: 130px;
+  width: 1000px;
+}
+
 #onsketable{
   float: left;
   margin-top: 40px;
@@ -234,7 +199,7 @@ table{
   padding: 20px;
 }
 
-# onskeliste p{
+#onskeliste p{
   margin-bottom: 50px;
 }
 
@@ -247,4 +212,35 @@ table{
   width: 250px;
   border: none;
   padding: 50px;
+}
+
+/* Cat's end CSS*/
+
+footer {
+	/*background:#ffab62;*/
+    color: #444444;
+    margin: 3px;
+	/*width:100%;
+	height:100px;*/
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px){
+    body{
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    section{
+        font-size: 24px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape){
+    section{
+        font-size: 20px;
+    }
+
 }
