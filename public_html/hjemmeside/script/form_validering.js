@@ -67,7 +67,6 @@ function validateRadio(){
     }
 }
 
-
 function validateForm(){
     if(!validateName() || !validatePhone() || !validateEmail() || !validateRadio()){
         document.getElementById('submitError').style.display = "block";

@@ -5,22 +5,15 @@ WHEN: Oktober 2016
 UPDATED BY: Kim Duong
 WHEN: November 2016
 PURPOSE: Navigasjonsbar -->
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
 
 <ul id="nav">
   <li><a href="var_historie.html">Vår historie</a></li>
-  <li><a href="#"
-      onmouseover="mopen('m1')"
-      onmouseout="mclosetime()">Praktisk info</a>
-      <div id="m1"
-          onmouseover="mcancelclosetime()"
-          onmouseout="mclosetime()">
-          <a href="vielse.html">Vielse</a>
-          <a href="bryllupsfest.html">Bryllupsfest</a>
-          <a href="meny.html">Meny</a>
-      </div>
+  <li><a href="#">Praktisk info</a>
+      <ul>
+          <li><a href="vielse.html">Vielse</a></li>
+          <li><a href="bryllupsfest.html">Bryllupsfest</a></li>
+          <li><a href="meny.html">Meny</a></li>
+      </ul>
   </li>
   <li><a href="onskeliste.html">Ønskeliste</a></li>
   <li><a href="index.html"><img src="img/logo.png" width="60"></a></li>
@@ -28,5 +21,3 @@ PURPOSE: Navigasjonsbar -->
   <li><a href="toastmaster.html">Toastmaster</a></li>
   <li><a class="active" href="kontakt_oss.html">Kontakt oss</a></li>
 </ul>
-<div style="clear:both"></div>
-<script type="text/javascript" src="script/drop_down_meny.js"></script>

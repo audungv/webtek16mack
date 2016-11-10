@@ -9,23 +9,32 @@ body {
     font-size: 16px;
     text-align: center;
 }
+#wrapper {
+	min-height:100%;
+	position:relative;
+    min-width: 800px;
+}
+#header {
+    padding: 1px;
+    min-width: 800px;
+}
 
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
 }
-#wrapper {
-	min-height:100%;
-	position:relative;
-}
 
 /* Farger for linker */
+a{
+    text-decoration: none;
+}
 a:visited, a:link {
     color: black;
 }
 a:hover {
     color: #b07500;
+    text-decoration: none;
 }
 .active {
     color: #b07500;
@@ -33,28 +42,24 @@ a:hover {
 
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
 #nav{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin:0;
-  padding:0;
-  text-align:center;
-  list-style:none;
-  background-color: rgba(255,255,255,0.7);
-  z-index: 30
+    position: fixed;
+    width: 100%;
+    min-width: 800px;
+    top: 0;
+    margin:0;
+    padding:0;
+    text-align:center;
+    list-style:none;
+    background-color: rgba(255,255,255,0.7);
 }
-
 #nav li{
-  position:relative;
-  display:inline-block;
+    position:relative;
+    display:inline;
 }
-
 #nav a{
-  display: inline-block;
-  padding: 20px 16px;
-  text-decoration: none
+    display:inline-block;
+    padding:10px;
 }
-
 #nav ul{
     position:absolute;
     left:-9999px;
@@ -64,44 +69,23 @@ a:hover {
     background-color: rgba(255,255,255,0.9);
     box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.2);
 }
-
 #nav ul li{
     display:block;
 }
-
+#nav li:hover ul{
+    left:0;
+}
+#nav li:hover ul a{
+}
 #nav li:hover ul a:hover{
     background-color: #dabc80;
     color: white;
 }
-
-#nav li:hover ul a{
-    text-decoration:none;
-    padding: 12px 16px;
-}
-
 #nav ul a{
     white-space:nowrap;
     display:block;
 }
 
-#nav div{
-  position: absolute;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-  background: #EAEBD8;
-  border: 1px solid #5970B2
-}
-
-#nav div a{
-  white-space:nowrap;
-  display:block;
-}
-
-#nav div a:hover{
-  background: #49A3FF;
-  color: #FFF
-}
 
 section {
     margin-top: 130px;
@@ -110,14 +94,12 @@ section {
 }
 
 /* Innhold på kontakt_oss.html */
-#kontakt_oss {
-    width: 400 px;
-}
 #kontakt_oss p, #toastmaster p, #meny div {
     margin-left: 35%;
     padding-left: 30px;
     text-align: left;
     border-left: solid #000000;
+    max-width: 400px;
 }
 
 /* RSVP-skjema */
@@ -138,11 +120,14 @@ label {
 }
 input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
+    height: 17px;
+    margin: 2px;
     border-width: 1px;
     border-color: black;
 }
 textarea {
     width: 420px;
+    height: auto;
     border-width: 1px;
     border-color: black;
 }
@@ -194,6 +179,10 @@ table{
   height: 400px;
   width: 100%;
  }
+
+#index h1{
+    margin: 20px;
+}
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
