@@ -18,6 +18,7 @@ Minh Ha
 - [ ] Legge til oppdatert rsvp.html
 - [ ] Legge til oppdatert var_historie.html
 - [ ] Fikse css til countdown, <p> i bryllupsfest.html og vielse.html
+- [ ] css til forsidebilde
 
 **Kommentarer til logg
 - API til google maps er ikke låst
