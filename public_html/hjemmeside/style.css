@@ -179,6 +179,10 @@ table{
   height: 400px;
   width: 100%;
  }
+
+#index h1{
+    margin: 20px;
+}
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
