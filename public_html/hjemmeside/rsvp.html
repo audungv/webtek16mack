@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+FILE NAME: rsvp.html
+WRITTEN BY: Au-Dung Vuong
+WHEN: Oktober 2016
+MODIFIED BY: Catriona Tørklep
+WHEN: November 2016
+PURPOSE: Svarskjema -->
+<html>
+    <head>
+        <title>RSVP</title>
+        <meta charset="utf-8" />
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="icon"  href="img/favikon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+           <!-- Navigasjonsbar -->
+           <div id="header"></div>
+
+
+           <!-- Sidens innhold -->
+           <section id="rsvp">
+            <h1> RSVP </h1>
+            <form id="gform" name="rsvpForm" method="post" onclick="validateForm()" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
+                <label>Kontaktperson: * </label>  <input type="text" name="name" id="name"  onblur="validateName()"  pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
+                <label>Telefon: * </label>        <input type="text" name="phone" id="phone" onblur="validatePhone()" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom."  required><br>
+                <label>E-mail: * </label>         <input type="email" name="email" id="email" onblur="validateEmail()" required><br>
+                <label>Tar med seg: </label>    <input type="text" name="guests"><br>
+                <br>
+
+                Kommer til: <br>
+                <label>Vielsen * </label>         <input type="radio" name="wedding" id="wedJa" value="true" required> Ja
+                                                <input type="radio" name="wedding" id="wedNei" value="false"> Nei<br>
+                <label>Bryllupsfesten * </label>  <input type="radio" name="party" id="parJa" value="true" required> Ja
+                                                <input type="radio" name="party" id="parNei" value="false"> Nei<br>
+                <br>
+
+
+                <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
+                <br>
+
+                <input type="submit" id="submit" name="submit" value="Send"/>
+            </form>
+            <br>
+
+            <span id="nameError" style="display:none;">*Navnet kan ikke inneholde spesialtegn.</span>
+            <span id="phoneError" style="display:none;">*Telefonnummeret kan bare inneholde tall, + og mellomrom.</span>
+            <span id="emailError" style="display:none;">*E-postadressen må være på formen x@x.xx(x).</span>
+            <span id="radioError" style="display:none;">*Vennligst svar på om du kommer i vielsen og bryllupsfesten.</span>
+            <span id="submitError" style="display:none;">*Vennligst fyll ut alle obligatoriske felter.</span>
+
+
+
+            <div style="display:none;" id="thankyou_message">
+                <p>Takk for ditt svar!</p>
+            </div>
+
+        </section>
+
+
+           <!-- Fotnote -->
+           <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/form_validering.js"></script>
+    </body>
+</html>
