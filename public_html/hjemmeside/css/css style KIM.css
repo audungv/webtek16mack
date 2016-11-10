@@ -1,0 +1,73 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+    min-width: 800px;
+    background-color: #f2f3e4;
+    font-family: georgia;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
+#nav{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+#nav li{
+  position:relative;
+  display:inline-block;
+}
+
+#nav a{
+  display:inline-block;
+  padding:10px;
+}
+
+#nav ul{
+  display:block;
+  position:absolute;
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+#nav ul li{
+  display:block;
+}
+
+#nav li:hover ul{
+  left:0;
+}
+
+#nav li:hover ul a{
+  text-decoration:none;
+  background:#F8F7EB;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#nav li:hover ul a:hover{
+  text-decoration:none;
+  color: white;
+  background-color: #dabc80;
+}
+#nav ul a{
+  display:block;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+  color: #B07500;
+}
