@@ -9,17 +9,21 @@ body {
     font-size: 16px;
     text-align: center;
 }
+#header {
+    padding: 1px;
+    min-width: 800px;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+    min-width: 800px;
+}
 
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
 }
-#wrapper {
-	min-height:100%;
-	position:relative;
-}
-
 /* Farger for linker */
 a:visited, a:link {
     color: black;
@@ -41,7 +45,6 @@ a:hover {
   text-align:center;
   list-style:none;
   background-color: rgba(255,255,255,0.7);
-  z-index: 30
 }
 
 #nav li{
