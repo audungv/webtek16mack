@@ -1,147 +1,79 @@
-function validateName(name){
-  var re = /[A-Za-z -']/;
+/*
+FILE NAME: form_validering.js
+WRITTEN BY: Catriona Tørklep
+WHEN: november 2016
+PURPOSE: Validerer input i svarskjema
+*/
 
-  console.log(document.getElementById(name).value);
-  if(re.test(document.getElementById(name).value)){
-    document.getElementById(name).style.background='#ccffcc';
+// Checks that the name doesn't contains special characters
+function validateName(){
+    var re = /^(?=.*[a-zA-Z])([A-z\s-æøåÆØÅ]+)$/;
+    var name = document.getElementById('name');
+    
+  if(re.test(name.value)){
+    name.style.background='#E6F0C9';
     document.getElementById('nameError').style.display = "none";
     return true;
-  }
-  else {
-    document.getElementById(name).style.background='#e35152';
+  } else {
+    name.style.background='#F9E7E4';
     document.getElementById('nameError').style.display = "block";
     return false;
   }
 }
 
-function validatePhone(phone){
-  var re = /[A-Za-z -']/;
-  console.log(document.getElementById(phone));
-  if(re.test(document.getElementById(phone).value)){
-    document.getElementById(phone).style.background='#ccffcc';
+// Checks that the phone number only contains numbers, + 
+function validatePhone(){
+  var re = /^(?=.*[0-9])([0-9+\s]+)$/;
+  var phone = document.getElementById('phone');
+    
+  if(re.test(phone.value)){
+    phone.style.background='#E6F0C9';
     document.getElementById('phoneError').style.display = "none";
     return true;
-  }
-  else {
-    document.getElementById(phone).style.background='#e35152';
+  } else {
+    phone.style.background='#F9E7E4';
     document.getElementById('phoneError').style.display = "block";
     return false;
   }
 }
 
-function validateEmail(email){
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if(re.test(email)){
-    document.getElementById('email').style.background ='#ccffcc';
+function validateEmail(){
+  var re = /^\w+@[a-zA-Z_.]+?\.[a-zA-Z]{2,3}$/;
+    var email = document.getElementById('email');
+    
+  if(re.test(email.value)){
+    email.style.background ='#E6F0C9';
     document.getElementById('emailError').style.display = "none";
     return true;
-  }
-  else {
-    document.getElementById('email').style.background ='#e35152';
+  } else {
+    email.style.background ='#F9E7E4';
+    document.getElementById('emailError').style.display = "block";
     return false;
   }
 }
 
-function validateRadio(x){
-  if(document.getElementsByName(x).checked){
-    return true;
-  }
-  else {
-    return false;
-  }
+function validateRadio(){
+    var wedJa = document.getElementById('wedJa');
+    var wedNei = document.getElementById('wedNei');
+    var parJa = document.getElementById('parJa');
+    var parNei = document.getElementById('parNei');
+    
+    if((wedJa.checked || wedNei.checked) && (parJa.checked || parNei.checked)){
+        document.getElementById('radioError').style.display = "none";
+        return true;
+    } else {
+        document.getElementById('radioError').style.display = "block";
+        return false;
+    }
 }
+
 
 function validateForm(){
-  var error = 0;
-  if(!validateName('name')){
-    document.getElementById('nameError').style.display = "block";
-    error++;
-  }
-
-  if(!validatePhone(document.getElementById('phone').value)){
-    document.getElementById('phoneError').style.display = "block";
-    error++;
-  }
-
-  if(!validateEmail(document.getElementById('email').value)){
-    document.getElementById('emailError').style.display = "block";
-    error++;
-  }
-
-  if(validateRadio('wedJa')){
-  }
-  else if(validateRadio('wedNei')){
-  }
-  else{
-    document.getElementById('weddingError').style.display = "block";
-    error++;
-  }
-
-  if(validateRadio('parJa')){
-  }
-  else if(validateRadio('parNei')){
-  }
-  else{
-    document.getElementById('partyError').style.display = "block";
-    error++;
-  }
-
-
-  if(error > 0){
-    return false;
-  }
-}
-
-
-
-
-/*function validateForm() {
-    var navn = document.forms["rsvpForm"]["name"].value;
-    var telefon = document.forms["rsvpForm"]["phone"].value;
-    var epost = document.forms["rsvpForm"]["email"].value;
-    var gjester = document.forms["rsvpForm"]["guests"].value;
-
-    if (navn != null || navn != "") && (telefon != null || telefon != "") && (epost != null || epost != ""){
-      document.getElementById("feil").innerHTML = ''
-  }
-}
-*/
-
-/*
-
-function validateForm() {
-    var navn = document.forms["rsvpForm"]["name"].value;
-    var telefon = document.forms["rsvpForm"]["phone"].value;
-    var epost = document.forms["rsvpForm"]["email"].value;
-    var gjester = document.forms["rsvpForm"]["guests"].value;
-
-    if (navn == null || navn == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn ditt navn.';
+    if(!validateName() || !validatePhone() || !validateEmail() || !validateRadio()){
+        document.getElementById('submitError').style.display = "block";
         return false;
-    }
-
-    if (telefon == null || telefon == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn ditt telefonnummer.';
-        return false;
-    }
-
-    if (epost == null || epost == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn din e-post.';
-        return false;
-    }
-
-}
-
-*/
-
-/*
-function validateForm(this) {
-
-var navn = document.forms["rsvpForm"][this];
-
-    if (navn.value == null || navn.value == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst fyll inn alle feltene.';
-        return false;
+    } else {
+        document.getElementById('submitError').style.display = "none";
+        return true;
     }
 }
-*/
