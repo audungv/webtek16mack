@@ -1,86 +1,78 @@
-function validateForm() {
-    var navn = document.forms["rsvpForm"]["name"].value;
-    var telefon = document.forms["rsvpForm"]["phone"].value;
-    var epost = document.forms["rsvpForm"]["email"].value;
-    var gjester = document.forms["rsvpForm"]["guests"].value;
-
-    if (navn == null || navn == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn ditt navn.';
-        return false;
-    }
-
-    if (telefon == null || telefon == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn ditt telefonnummer.';
-        return false;
-    }
-
-    if (epost == null || epost == "") {
-        document.getElementById("feil").innerHTML = '* Vennligst skriv inn din e-post.';
-        return false;
-    }
-
-}
-
-
 /*
+FILE NAME: form_validering.js
+WRITTEN BY: Catriona Tørklep
+WHEN: november 2016
+PURPOSE: Validerer input i svarskjema
+*/
 
-Ingen av disse kodene fungerer. Skal stoppe formen fra å bli sendt og gi feilmelding dersom ingen radio buttons er checked.
-Disse baserer seg på at <form> har et element inni taggen som heter onsubmit="return radioValidate()"
+// Checks that the name doesn't contains special characters
+function validateName(){
+    var re = /^(?=.*[a-zA-Z])([A-z\s-æøåÆØÅ]+)$/;
+    var name = document.getElementById('name');
 
-------------------- KODE 1 ------------------------
-
-function radioValidate() {
-
-  var bryllup = document.getElementsByName("wedding")
-  var fest = document.getElementsByName("party")
-  var b = -1
-  var f = -1
-
-  for(var i=0; i < bryllup.length; i++){
-   if(bryllup[i].checked) {
-      b = i;
-    }
-  }
-
-  for(var i=0; i < fest.length; i++){
-   if(fest[i].checked) {
-      f = i;
-    }
-  }
-
-  if (c == -1) {
-    document.getElementById("sub").addEventListener("click", function(event){
-    event.preventDefault();
-    document.getElementById("feil").innerHTML = '* Vennligst kryss av ja eller nei på "Vielsen".';
-  }
-
-  if (f == -1) {
-    document.getElementById("sub").addEventListener("click", function(event){
-    event.preventDefault();
-    document.getElementById("feil").innerHTML = '* Vennligst kryss av ja eller nei på "Bryllupsfesten".';
-  }
-
-
-------------------- KODE 2 ------------------------
-
-  function radioValidate() {
-
-  var bryllup = document.forms["rsvpForm"]["wedding"].checked;
-  var fest = document.forms["rsvpForm"]["party"].checked;
-
-  if ( (bryllup[0] == false) && (bryllup[1] == false) ) {
-    document.getElementById("sub").addEventListener("click", function(event){
-    event.preventDefault();
-    document.getElementById('feil').innerHTML = '* Vennligst kryss av ja eller nei.';
-    return false;
-  }
-
-  if ( (fest[0] == false) && (fest[1] == false) ) {
-    document.getElementById("sub").addEventListener("click", function(event){
-    event.preventDefault();
-    document.getElementById('feil').innerHTML = '* Vennligst kryss av ja eller nei.';
+  if(re.test(name.value)){
+    name.style.background='#E6F0C9';
+    document.getElementById('nameError').style.display = "none";
+    return true;
+  } else {
+    name.style.background='#F9E7E4';
+    document.getElementById('nameError').style.display = "block";
     return false;
   }
 }
 
-*/
+// Checks that the phone number only contains numbers, +
+function validatePhone(){
+  var re = /^(?=.*[0-9])([0-9+\s]+)$/;
+  var phone = document.getElementById('phone');
+
+  if(re.test(phone.value)){
+    phone.style.background='#E6F0C9';
+    document.getElementById('phoneError').style.display = "none";
+    return true;
+  } else {
+    phone.style.background='#F9E7E4';
+    document.getElementById('phoneError').style.display = "block";
+    return false;
+  }
+}
+
+function validateEmail(){
+  var re = /^\w+@[a-zA-Z_.]+?\.[a-zA-Z]{2,3}$/;
+    var email = document.getElementById('email');
+
+  if(re.test(email.value)){
+    email.style.background ='#E6F0C9';
+    document.getElementById('emailError').style.display = "none";
+    return true;
+  } else {
+    email.style.background ='#F9E7E4';
+    document.getElementById('emailError').style.display = "block";
+    return false;
+  }
+}
+
+function validateRadio(){
+    var wedJa = document.getElementById('wedJa');
+    var wedNei = document.getElementById('wedNei');
+    var parJa = document.getElementById('parJa');
+    var parNei = document.getElementById('parNei');
+
+    if((wedJa.checked || wedNei.checked) && (parJa.checked || parNei.checked)){
+        document.getElementById('radioError').style.display = "none";
+        return true;
+    } else {
+        document.getElementById('radioError').style.display = "block";
+        return false;
+    }
+}
+
+function validateForm(){
+    if(!validateName() || !validatePhone() || !validateEmail() || !validateRadio()){
+        document.getElementById('submitError').style.display = "block";
+        return false;
+    } else {
+        document.getElementById('submitError').style.display = "none";
+        return true;
+    }
+}

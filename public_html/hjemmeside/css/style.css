@@ -9,21 +9,27 @@ html, body {
 	margin:0;
 	padding:0;
 	height:100%;
+  min-width: 800px;
+  background-color: #f2f3e4;
+  font-family: georgia;
+  font-size: 16px;
+  text-align: center;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
     min-width: 800px;
-    background-color: #f2f3e4;
-    font-family: georgia;
-    font-size: 16px;
-    text-align: center;
+}
+#header {
+    padding: 1px;
+    min-width: 800px;
 }
 
 /* Overskrift */
 h1 {
     font-family: 'Satisfy', cursive;
     font-size: 36px;
-}
-#wrapper {
-	min-height:100%;
-	position:relative;
 }
 
 /* Farger for linker */
@@ -32,6 +38,7 @@ a:visited, a:link {
 }
 a:hover {
     color: #b07500;
+    text-decoration: none;
 }
 .active {
     color: #b07500;
@@ -48,7 +55,7 @@ a:hover {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #nav li{
@@ -96,46 +103,51 @@ a{
   text-decoration:none;
 }
 /*Kim #nav end*/
+
 section {
-    margin-top: 130px;
+  margin-top: 130px;
 	padding-bottom:30px; /* Height of the footer element */
-     /* NB: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
+  /* Nb: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
 }
 
 /* Innhold på kontakt_oss.html */
-#kontakt_oss {
-    width: 400 px;
-}
 #kontakt_oss p, #toastmaster p, #meny div {
-    margin-left: 35%;
-    padding-left: 30px;
-    text-align: left;
-    border-left: solid #000000;
+  margin-left: 35%;
+  padding-left: 30px;
+  text-align: left;
+  border-left: solid #000000;
+  max-width: 400px;
 }
 
 /* RSVP-skjema */
 form {
-    width: 430px;
-    margin: auto;
-    padding: 30px;
-    background-color: #e3cc9f;
-    text-align: left;
+  width: 430px;
+  margin: auto;
+  padding: 30px;
+  background-color: #e3cc9f;
+  text-align: left;
 
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
 }
+
 label {
     float: left;
     width: 140px;
 }
+
 input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
+    height: 17px;
+    margin: 2px;
     border-width: 1px;
     border-color: black;
 }
+
 textarea {
     width: 420px;
+    height: auto;
     border-width: 1px;
     border-color: black;
 }
