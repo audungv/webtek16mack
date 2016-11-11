@@ -91,6 +91,7 @@ a:hover {
     display:block;
 }
 
+
 section {
   margin-top: 130px;
 	padding-bottom:30px; /* Height of the footer element */
@@ -207,6 +208,7 @@ table{
 #mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
+  border: 3px solid #B07500;
  }
 /*Minh Ha's CSS end*/
 
@@ -242,7 +244,8 @@ table{
 /* Cat's CSS*/
 
 #countdown{
-	margin-top: -30px;
+	font-weight: bold;
+	color: #b07500;
 }
 /*Cat's css end*/
 
