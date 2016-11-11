@@ -114,15 +114,15 @@ section {
 
 /* Var_historie */
 #box{
-	width: 60%;
 	margin: 0 auto;
 }
-
+#box img{
+    width: 100%;
+}
 #box td{
   padding: 20px;
 	text-align: left;
 }
-
 #box td:last-child{
 	border-left: 3px solid;
 }
