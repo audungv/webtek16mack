@@ -3,7 +3,7 @@ FILE NAME: style.css
 WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
 WHEN: Oktober 2016
 UPDATED BY: Minh Ha Do
-WHEN: 10.11.16
+WHEN: 11.11.16
 PURPOSE: Styling*/
 html, body {
 	margin:0;
@@ -19,7 +19,6 @@ html, body {
 #wrapper {
 	min-height:100%;
 	position:relative;
-  min-width: 800px;
 }
 
 #header {
