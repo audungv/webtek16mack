@@ -269,7 +269,8 @@ table{
 /* Cat's CSS*/
 
 #countdown{
-	margin-top: -30px;
+	font-weight: bold;
+	color: #b07500;
 }
 /*Cat's css end*/
 
