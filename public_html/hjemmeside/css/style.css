@@ -227,6 +227,7 @@ table{
 #mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
+  border: 3px solid #B07500;
  }
 /*Minh Ha's CSS end*/
 
