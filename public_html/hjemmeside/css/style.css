@@ -1,3 +1,10 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
+WHEN: Oktober 2016
+UPDATED BY: Minh Ha Do
+WHEN: 10.11.16
+PURPOSE: Styling*/
 html, body {
 	margin:0;
 	padding:0;
@@ -95,6 +102,22 @@ section {
      /* NB: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
 }
 
+/* Var_historie */
+.var_historie{
+    column-rule-style: solid;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+}
+
 /* Innhold på kontakt_oss.html */
 #kontakt_oss {
     width: 400 px;
@@ -139,13 +162,16 @@ textarea {
   margin-top: 130px;
   width: 1000px;
 }
+
 .beliggenhet p{
   text-align: left;
-  margin-left: 100px;
+  margin-left: 0px 200px 200px 0px;
+	padding-left: 300px;
 }
+
 table{
   border-collapse: collapse;
-  margin: 10px;
+	margin-bottom: 10px;
 }
 
 #info td,#info tr{
@@ -214,12 +240,15 @@ table{
   padding: 50px;
 }
 
-/* Cat's end CSS*/
+#countdown{
+	margin-top: -30px;
+}
+/*Cat's css end*/
 
 footer {
 	/*background:#ffab62;*/
-    color: #444444;
-    margin: 3px;
+  color: #444444;
+  margin: 3px;
 	/*width:100%;
 	height:100px;*/
 	position:absolute;
@@ -237,6 +266,39 @@ footer {
     section{
         font-size: 24px;
     }
+    #nav{
+    min-width: 900px;
+    }
+
+    section {
+    /* Adjust footer spacing */
+	padding-bottom:50px;
+    }
+
+    /* Scaling index picture */
+    #index img{
+        width: 70%;
+        align-self: center;
+    }
+
+    /* Scaling rsvp form */
+    form {
+    width: 500px;
+}
+    label {
+    width: 200px;
+    }
+    input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+    width: 280px;
+    }
+    textarea {
+    width: 490px;
+    }
+
+    #kontakt_oss p, #toastmaster p, #meny div {
+    margin-left: 25%;
+    max-width: 500px;
+}
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape){
     section{
