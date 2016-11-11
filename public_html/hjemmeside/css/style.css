@@ -1,18 +1,64 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
+WHEN: Oktober 2016
+UPDATED BY: Minh Ha Do
+WHEN: 11.11.16
+PURPOSE: Styling*/
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+  min-width: 800px;
+  background-color: #f2f3e4;
+  font-family: georgia;
+  font-size: 16px;
+  text-align: center;
+}
 
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
 
+#header {
+    padding: 1px;
+    min-width: 800px;
+}
 
+/* Overskrift */
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 36px;
+}
+
+/* Farger for linker */
+a{
+	text-decoration: none;
+}
+a:visited, a:link {
+    color: black;
+}
+a:hover {
+    color: #b07500;
+    text-decoration: none;
+}
+.active {
+    color: #b07500;
+}
 
 /* Navigasjonsbar. Hentet inspirasjon fra http://csswizardry.com/demos/centred-nav/dropdown.html */
+/*Kim #nav*/
 #nav{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0;
+  left: 0;
   position: fixed;
-  width: 100%;
+  right: 0;
   top: 0;
-  margin:0;
-  padding:0;
-  text-align:center;
-  list-style:none;
-  background-color: rgba(255,255,255,0.7);
-  z-index: 30
+  z-index: 100;
 }
 
 #nav li{
@@ -21,61 +67,80 @@
 }
 
 #nav a{
-  display: inline-block;
-  padding: 20px 16px;
-  text-decoration: none
+  display:inline-block;
+  padding:10px;
 }
 
 #nav ul{
-    position:absolute;
-    left:-9999px;
-    margin:0;
-    padding:0;
-    text-align:left;
-    background-color: rgba(255,255,255,0.9);
-    box-shadow: 2px 2px 16px 2px rgba(0,0,0,0.2);
+  display:block;
+  position:absolute;
+  left:-9999px;
+  margin:0;
+  padding:0;
+  text-align:left;
 }
-
 #nav ul li{
-    display:block;
-}
-
-#nav li:hover ul a:hover{
-    background-color: #dabc80;
-    color: white;
-}
-
-#nav li:hover ul a{
-    text-decoration:none;
-    padding: 12px 16px;
-}
-
-#nav ul a{
-    white-space:nowrap;
-    display:block;
-}
-
-#nav div{
-  position: absolute;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-  background: #EAEBD8;
-  border: 1px solid #5970B2
-}
-
-#nav div a{
-  white-space:nowrap;
   display:block;
 }
 
-#nav div a:hover{
-  background: #49A3FF;
-  color: #FFF
+#nav li:hover ul{
+  left:0;
+}
+
+#nav li:hover ul a{
+  text-decoration:none;
+  background:#F8F7EB;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#nav li:hover ul a:hover{
+  text-decoration:none;
+  color: white;
+  background-color: #dabc80;
+}
+
+#nav ul a{
+  display:block;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+/*Kim #nav end*/
+
+section {
+  margin-top: 130px;
+	padding-bottom:30px; /* Height of the footer element */
+  /* Nb: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
+}
+
+/* Var_historie */
+.var_historie{
+    column-rule-style: solid;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+}
+
+/* Innhold på kontakt_oss.html */
+#kontakt_oss p, #toastmaster p, #meny div {
+    margin-left: 35%;
+    padding-left: 30px;
+    text-align: left;
+    border-left: solid #000000;
+    max-width: 400px;
 }
 
 /* RSVP-skjema */
-
 form {
     width: 430px;
     margin: auto;
@@ -95,43 +160,35 @@ label {
 
 input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
+    height: 17px;
+    margin: 2px;
     border-width: 1px;
     border-color: black;
 }
 
 textarea {
     width: 420px;
+    height: auto;
     border-width: 1px;
     border-color: black;
 }
 
-
-
-/* Fotnote */
-footer{
-    color: #444444;
-    margin: 3px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-/*Minh Ha's CSS, vielse og bryllupsfest*/
+/*Minh Ha's CSS*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
   width: 1000px;
-
 }
 
 .beliggenhet p{
   text-align: left;
-  margin: 0px 200px 200px 0px;
-  padding-left: 100px;
+  margin-left: 0px 200px 200px 0px;
+	padding-left: 300px;
 }
 
 table{
   border-collapse: collapse;
+	margin-bottom: 10px;
 }
 
 #info td,#info tr{
@@ -145,7 +202,13 @@ table{
   /*z-index: -1;*/
 }
 
-#info img{
+#info{
+  margin: 1em 0em 1em 1em
+  width: 50%;
+  float: left;
+}
+
+.svg{
   width: 50px;
   height: 50px;
   right: 10px;
@@ -154,11 +217,6 @@ table{
   /*z-index: -1;*/
 }
 
-#info{
-  margin: 1em 0em 1em 1em
-  width: 50%;
-  float: left;
-}
 #mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
@@ -166,6 +224,12 @@ table{
 /*Minh Ha's CSS end*/
 
 /* Cat's CSS*/
+#onskeliste{
+  margin: auto;
+  margin-top: 130px;
+  width: 1000px;
+}
+
 #onsketable{
   float: left;
   margin-top: 40px;
@@ -191,4 +255,71 @@ table{
   width: 250px;
   border: none;
   padding: 50px;
+}
+
+#countdown{
+	margin-top: -30px;
+}
+/*Cat's css end*/
+
+footer {
+	/*background:#ffab62;*/
+  color: #444444;
+  margin: 3px;
+	/*width:100%;
+	height:100px;*/
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px){
+    body{
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    section{
+        font-size: 24px;
+    }
+    #nav{
+    min-width: 900px;
+    }
+
+    section {
+    /* Adjust footer spacing */
+	padding-bottom:50px;
+    }
+
+    /* Scaling index picture */
+    #index img{
+        width: 70%;
+        align-self: center;
+    }
+
+    /* Scaling rsvp form */
+    form {
+    width: 500px;
+}
+    label {
+    width: 200px;
+    }
+    input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+    width: 280px;
+    }
+    textarea {
+    width: 490px;
+    }
+
+    #kontakt_oss p, #toastmaster p, #meny div {
+    margin-left: 25%;
+    max-width: 500px;
+}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape){
+    section{
+        font-size: 20px;
+    }
+
 }
