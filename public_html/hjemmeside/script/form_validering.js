@@ -14,7 +14,7 @@ function validateName(){
     document.getElementById('nameError').style.display = "none";
     return true;
   } else {
-    name.style.background='#F9E7E4';
+    name.style.background='#f4cfc9';
     document.getElementById('nameError').style.display = "block";
     return false;
   }
@@ -29,7 +29,7 @@ function validatePhone(){
     document.getElementById('phoneError').style.display = "none";
     return true;
   } else {
-    phone.style.background='#F9E7E4';
+    phone.style.background='#f4cfc9';
     document.getElementById('phoneError').style.display = "block";
     return false;
   }
@@ -43,7 +43,7 @@ function validateEmail(){
     document.getElementById('emailError').style.display = "none";
     return true;
   } else {
-    email.style.background ='#F9E7E4';
+    email.style.background ='#f4cfc9';
     document.getElementById('emailError').style.display = "block";
     return false;
   }
