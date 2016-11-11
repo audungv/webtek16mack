@@ -170,8 +170,9 @@ textarea {
 
 .beliggenhet p{
   text-align: left;
-  margin-left: 0px 200px 200px 0px;
-	padding-left: 300px;
+  margin-left: 15px;
+    margin-bottom: 15px;
+    padding-left: 300px;
 }
 
 table{
@@ -208,7 +209,7 @@ table{
 #mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
-  border: 3px solid #B07500;
+  border: 2px solid #e3cc9f;
  }
 /*Minh Ha's CSS end*/
 
