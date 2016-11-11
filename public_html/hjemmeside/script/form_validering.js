@@ -38,7 +38,7 @@ function validatePhone(){
 }
 
 function validateEmail(){
-  var re = /^\w+@[a-zA-Z_.]+?\.[a-zA-Z]{2,3}$/;
+  var re = /^[\w.!#$%&'*+-/=?^`{|}~]+@[a-zA-Z0-9-]+?\.[a-zA-Z]{2,3}$/;
     var email = document.getElementById('email');
     
   if(re.test(email.value)){
