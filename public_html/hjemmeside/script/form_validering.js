@@ -9,7 +9,6 @@ PURPOSE: Validerer input i svarskjema
 function validateName(){
     var re = /^(?=.*[a-zA-Z])([A-z\s-æøåÆØÅ]+)$/;
     var name = document.getElementById('name');
-
   if(re.test(name.value)){
     name.style.background='#E6F0C9';
     document.getElementById('nameError').style.display = "none";
@@ -25,7 +24,6 @@ function validateName(){
 function validatePhone(){
   var re = /^(?=.*[0-9])([0-9+\s]+)$/;
   var phone = document.getElementById('phone');
-
   if(re.test(phone.value)){
     phone.style.background='#E6F0C9';
     document.getElementById('phoneError').style.display = "none";
@@ -40,7 +38,6 @@ function validatePhone(){
 function validateEmail(){
   var re = /^[\w.!#$%&'*+-/=?^`{|}~]+@[a-zA-Z0-9-]+?\.[a-zA-Z]{2,3}$/;
   var email = document.getElementById('email');
-
   if(re.test(email.value)){
     email.style.background ='#E6F0C9';
     document.getElementById('emailError').style.display = "none";
