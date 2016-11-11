@@ -104,10 +104,16 @@ a:hover {
   display:block;
 }
 
-a{
+#nav a{
   color:white;
   text-decoration:none;
 }
+
+#nav a:hover{
+  text-decoration:none;
+  color: #B07500;
+}
+
 /*Kim #nav end*/
 
 section {
