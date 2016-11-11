@@ -2,7 +2,6 @@
 //WRITTEN BY: Minh Ha Do
 //WHEN: November 2016
 //PURPOSE: Telle ned dager til vielsen
-
 //Kode modifisert og inspirert fra: http://stackoverflow.com/questions/9335140/how-to-countdown-to-a-date
 var counter = document.getElementById('countdown')
 var end = new Date(Date.UTC(2017,03,08,15));

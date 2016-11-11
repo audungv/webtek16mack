@@ -39,7 +39,7 @@ function validatePhone(){
 
 function validateEmail(){
   var re = /^[\w.!#$%&'*+-/=?^`{|}~]+@[a-zA-Z0-9-]+?\.[a-zA-Z]{2,3}$/;
-    var email = document.getElementById('email');
+  var email = document.getElementById('email');
 
   if(re.test(email.value)){
     email.style.background ='#E6F0C9';
