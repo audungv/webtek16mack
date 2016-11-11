@@ -225,11 +225,12 @@ table{
   max-width: 60%;
 }
 #onskeliste li img {
+    margin-right: 20px;
   float: left;
-  margin: 0 10px 0 0;
 }
-#onskeliste li p {
-  margin-bottom: 50px;
+#onskeliste li p, h3 {
+    margin-left: 40%;
+    text-align: left;
 }
 #onskeliste li {
   padding: 20px;
