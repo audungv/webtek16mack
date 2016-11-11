@@ -99,7 +99,7 @@ section {
   /* Nb: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
 }
 /* Innhold på var_historie, vielse, bryllupsfest, onskeliste */
-#var_historie div, .beliggenhet, onskeliste div{
+#var_historie div, .beliggenhet, #onskeliste ul{
     max-width: 60%;
 }
 
@@ -109,23 +109,24 @@ section {
     padding-left: 30px;
     text-align: left;
     border-left: solid #000000;
-    max-width: 40%;
+    max-width: 35%;
 }
 
 /* Var_historie */
-.var_historie{
-    column-rule-style: solid;
-    margin: auto;
-    padding: 10px;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
-    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
-    -moz-column-rule-style: solid; /* Firefox */
+#box{
+	width: 60%;
+	margin: 0 auto;
 }
+
+#box td{
+  padding: 20px;
+	text-align: left;
+}
+
+#box td:last-child{
+	border-left: 3px solid;
+}
+
 
 /* RSVP-skjema */
 form {
@@ -156,6 +157,7 @@ textarea {
     border-width: 1px;
     border-color: black;
 }
+
 
 /*Minh Ha's CSS*/
 #index img{
@@ -214,7 +216,7 @@ table{
  }
 /*Minh Ha's CSS end*/
 
-/* Onskelise */
+/* Onskeliste */
 #onskeliste > p{
     max-width: 60%;
     margin-left: 18%;
@@ -222,7 +224,6 @@ table{
 #onskeliste ul {
   list-style-type: none;
     margin-left: 15%;
-  max-width: 60%;
 }
 #onskeliste li img {
     margin-right: 20px;
@@ -287,7 +288,13 @@ footer {
         width: 70%;
         align-self: center;
     }
-
+    
+    /* Scaling svg*/
+    .svg{
+        width: 40px;
+        height: 40px;
+    }
+    
     /* Scaling rsvp form */
     form {
     width: 500px;
@@ -303,7 +310,7 @@ footer {
     }
 
     /* Innhold på var_historie, vielse, bryllupsfest, onskeliste */
-    #var_historie div, .beliggenhet, onskeliste div{
+    #var_historie div, .beliggenhet, #onskeliste ul{
         max-width: 70%;
     }
     #kontakt_oss p, #toastmaster p, #meny div {
