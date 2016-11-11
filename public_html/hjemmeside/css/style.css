@@ -33,6 +33,9 @@ h1 {
 }
 
 /* Farger for linker */
+a{
+	text-decoration: none;
+}
 a:visited, a:link {
     color: black;
 }
