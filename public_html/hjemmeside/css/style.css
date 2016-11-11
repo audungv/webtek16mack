@@ -282,10 +282,10 @@ footer {
     }
 
     /* Scaling index picture */
-    /*#index img{
+    #index img{
         width: 70%;
         align-self: center;
-    }*/
+    }
 
     /* Scaling rsvp form */
     form {
@@ -301,10 +301,14 @@ footer {
     width: 490px;
     }
 
-    /*#kontakt_oss p, #toastmaster p, #meny div {
+    /* Innhold på var_historie, vielse, bryllupsfest, onskeliste */
+    #var_historie div, .beliggenhet, onskeliste div{
+        max-width: 70%;
+    }
+    #kontakt_oss p, #toastmaster p, #meny div {
     margin-left: 25%;
-    max-width: 500px;
-    }*/
+    max-width: 50%;
+    }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape){
     section{
