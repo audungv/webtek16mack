@@ -2,8 +2,8 @@
 FILE NAME: style.css
 WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
 WHEN: Oktober 2016
-MODIFIED BY: Minh Ha Do
-WHEN: 12.11.16
+UPDATED BY: Minh Ha Do
+WHEN: 11.11.16
 PURPOSE: Styling*/
 html, body {
 	margin:0;
@@ -57,7 +57,7 @@ a:hover {
     padding:0;
     text-align:center;
     list-style:none;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.7);
 		z-index: 10;
 }
 #nav li{
@@ -99,7 +99,7 @@ section {
   /* Nb: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
 }
 /* Innhold på var_historie, vielse, bryllupsfest, onskeliste */
-#var_historie, .beliggenhet, #onskeliste ul{
+#var_historie div, .beliggenhet, #onskeliste ul{
     max-width: 60%;
 }
 
@@ -113,27 +113,20 @@ section {
 }
 
 /* Var_historie */
-#var_historie{
+#box{
 	margin: 0 auto;
 }
-#box{
-	margin-left:auto;
-  margin-right:auto;
-}
 #box img{
-  width: 100%;
+    width: 100%;
 }
 #box td{
-	padding: 0px 20px 0px 20px;
+  padding: 20px;
 	text-align: left;
 }
-#box tr, #box td{
-	width: 350px;
-}
-
 #box td:last-child{
 	border-left: 3px solid;
 }
+
 
 /* RSVP-skjema */
 form {
@@ -165,29 +158,31 @@ textarea {
     border-color: black;
 }
 
+
 /*Minh Ha's CSS*/
-/*Index.html*/
 #index img{
     width: 50%;
     align-self: center;
 }
 
-/*bryllupsfest.html og vielse.html*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
   width: 1000px;
 }
+
 .beliggenhet p{
   text-align: left;
   margin-left: 15px;
     margin-bottom: 15px;
     padding-left: 300px;
 }
+
 table{
   border-collapse: collapse;
 	margin-bottom: 10px;
 }
+
 #info td,#info tr{
   width: 250px;
   height: 55px;
@@ -196,20 +191,25 @@ table{
   margin-bottom: 15px;
   text-align: left;
   position: relative;
+  /*z-index: -1;*/
 }
+
 #info{
   margin: 1em 0em 1em 1em
   width: 50%;
   float: left;
 }
+
 .svg{
   width: 50px;
   height: 50px;
   right: 10px;
   top: 20px;
   position: absolute;
+  /*z-index: -1;*/
 }
-#mapVielse,#mapFest {/*Endre plassering*/
+
+#mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
   border: 2px solid #e3cc9f;
@@ -242,6 +242,8 @@ table{
     color: white;
   cursor: pointer;
 }
+
+
 
 /* Cat's CSS*/
 
@@ -286,13 +288,13 @@ footer {
         width: 70%;
         align-self: center;
     }
-
+    
     /* Scaling svg*/
     .svg{
         width: 40px;
         height: 40px;
     }
-
+    
     /* Scaling rsvp form */
     form {
     width: 500px;
