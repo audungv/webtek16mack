@@ -12,13 +12,5 @@
 - Vil ikke at menyen skal "breake" når nettleseren blir for liten (Au-Dung prøver å fikse dette)
 - [ ] style.css
 
-Minh Ha
-- [ ] Rydde ting
-- [ ] Fikse riktig form_validering.js
-- [ ] Legge til oppdatert rsvp.html
-- [ ] Legge til oppdatert var_historie.html
-- [ ] Fikse css til countdown, <p> i bryllupsfest.html og vielse.html
-- [ ] css til forsidebilde
-
 **Kommentarer til logg
 - API til google maps er ikke låst
