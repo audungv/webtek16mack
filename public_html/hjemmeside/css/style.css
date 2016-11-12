@@ -99,7 +99,7 @@ section {
   /* Nb: Make sure the value for 'padding-bottom' is equal to or greater than the height of #footer.*/
 }
 /* Innhold på var_historie, vielse, bryllupsfest, onskeliste */
-#var_historie div, .beliggenhet, #onskeliste ul{
+#var_historie, .beliggenhet, #onskeliste ul{
     max-width: 60%;
 }
 
