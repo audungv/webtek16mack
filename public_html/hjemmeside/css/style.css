@@ -129,7 +129,13 @@ section {
 
 
 /* RSVP-skjema */
-form {
+#rsvp p{
+    max-width: 430px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#rsvp form {
     width: 430px;
     margin: auto;
     padding: 30px;
@@ -140,18 +146,18 @@ form {
     border-style: solid;
     border-radius: 5px;
 }
-label {
+#rsvp label {
     float: left;
     width: 140px;
 }
-input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+#rsvp input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
     height: 17px;
     margin: 2px;
     border-width: 1px;
     border-color: black;
 }
-textarea {
+#rsvp textarea {
     width: 420px;
     height: auto;
     border-width: 1px;

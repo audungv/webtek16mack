@@ -26,6 +26,7 @@ PURPOSE: Svarskjema -->
            <!-- Sidens innhold -->
            <section id="rsvp">
             <h1> RSVP </h1>
+            <p> Vennligst gi oss svar på om du har mulighet til å komme i vielsen og bryllupet innen 3. februar 2017. </p>
             <form id="gform" name="rsvpForm" method="post" onclick="validateForm()" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
                 <label>Kontaktperson: * </label>  <input type="text" name="name" id="name"  onblur="validateName()"  pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
                 <label>Telefon: * </label>        <input type="text" name="phone" id="phone" onblur="validatePhone()" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom."  required><br>
@@ -68,10 +69,14 @@ PURPOSE: Svarskjema -->
 
         </div>
 
-        <!-- Submit the Form to Google Using "AJAX" -->
-        <script data-cfasync="false" src="script/form-submission-handler.js"></script>
+        <!-- Script for å gjøre koden modulær -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="script/modular.js"></script>
+        
+        <!-- Validering  av skjema -->
         <script src="script/form_validering.js"></script>
+        
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" src="script/form-submission-handler.js"></script>
     </body>
 </html>

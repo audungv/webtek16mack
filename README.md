@@ -8,12 +8,12 @@
 - [x] Pages validate (HTML and CSS)
 - [ ] Mangler full validering til onskeliste.html
 - [x] No code errors (test each page with the Console)
-- [ ] Clear navigation structure
+- [x] Clear navigation structure
 - [x] All features work correctly
 - [x] No broken links
 - [x] Appropriate comments (must be at top of each page, but also within CSS, JavaScript & HTML)
 - [x] Proper nesting of code (CSS, HTML, and JavaScript)
-- [ ] No unnecessary duplication of code from page to page (use JavaScript to avoid this)
+- [x] No unnecessary duplication of code from page to page (use JavaScript to avoid this)
 - [x] Appropriate ALT attributes for all images
 - [x] All pages have appropriate titles
 - [x] Aesthetically pleasing layout/color/font
