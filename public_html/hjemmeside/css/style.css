@@ -235,9 +235,10 @@ table{/*onskeliste, bryllupsfest og vielse*/
   padding: 20px;
   overflow: auto;
 }
-#onskeliste li:hover {
+
+#onskeliste li:hover, #onskeliste a:hover {
   background: #dabc80;
-    color: white;
+	color: #ffffff;
   cursor: pointer;
 }
 
