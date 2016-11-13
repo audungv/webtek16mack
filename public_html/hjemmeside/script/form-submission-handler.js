@@ -1,3 +1,7 @@
+//FILE NAME: form-submission-handler.js
+//WRITTEN BY: Au-Dung Vuong
+//WHEN: November 2016
+//PURPOSE: Kode for å sende innhold fra svarskjema til et Google spreadsheet
 // Got code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
 function validEmail(email) { // see:
