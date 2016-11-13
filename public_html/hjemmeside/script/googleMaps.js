@@ -2,7 +2,7 @@
 //WRITTEN BY: Minh Ha Do
 //WHEN: November 2016
 //PURPOSE: Telle ned dager til vielsen
-//Google Maps kode fra Google: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
+//Google Maps kode modifisert fra Google: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
 
 //Vielse
 function vielseMap() {
@@ -15,7 +15,7 @@ function vielseMap() {
     position: lommedal,
     map: map
   });
-};
+}
 
 //Bryllupsfest
 function bryllupsMap() {
@@ -28,4 +28,4 @@ function bryllupsMap() {
     position: bennaveien,
     map: map
   });
-};
+}
