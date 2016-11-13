@@ -1,4 +1,4 @@
-//FILE NAME: script.js
+//FILE NAME: modular.js
 //WRITTEN BY: Au-Dung Vuong
 //WHEN: Oktober 2016
 //PURPOSE: Kode for å gjøre navigasjonsbar og fotnoten modulær slik navigasjonsbaren og fotnoten er lik for alle sider
