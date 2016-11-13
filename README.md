@@ -9,21 +9,15 @@
 - [ ] Mangler full validering til onskeliste.html
 - [x] No code errors (test each page with the Console)
 - [ ] Clear navigation structure
-- [ ] All features work correctly
+- [x] All features work correctly
 - [x] No broken links
-- [ ] Appropriate comments (must be at top of each page, but also within CSS, JavaScript & HTML)
-- [ ] Proper nesting of code (CSS, HTML, and JavaScript)
+- [x] Appropriate comments (must be at top of each page, but also within CSS, JavaScript & HTML)
+- [x] Proper nesting of code (CSS, HTML, and JavaScript)
 - [ ] No unnecessary duplication of code from page to page (use JavaScript to avoid this)
 - [x] Appropriate ALT attributes for all images
 - [x] All pages have appropriate titles
-- [ ] Aesthetically pleasing layout/color/font
-- [ ] Properly sized images with correct aspect ratio
-
-###To do list:
-- Croppe forside bilde til riktig størrelse
-- Fotnoten flytter seg ikke når sidens innhold blir for stor (Au-Dung prøver å fikse dette)
-- Vil ikke at menyen skal "breake" når nettleseren blir for liten (Au-Dung prøver å fikse dette)
-- [ ] style.css
+- [x] Aesthetically pleasing layout/color/font
+- [x] Properly sized images with correct aspect ratio
 
 **Kommentarer til logg
 - API til google maps er ikke låst
