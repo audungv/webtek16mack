@@ -5,7 +5,8 @@
 [Alle frister](https://docs.google.com/document/d/1bsnCHb3Hz70xM54buKW69KkVUNSBvf2dBQgLB12PSGI/edit?usp=sharing)
 
 ###Siste sjekk 11.november
-- [ ] Pages validate (HTML and CSS)
+- [x] Pages validate (HTML and CSS)
+- [ ] Mangler full validering til onskeliste.html
 - [ ] No code errors (test each page with the Console)
 - [ ] Clear navigation structure
 - [ ] All features work correctly
