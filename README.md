@@ -7,15 +7,15 @@
 ###Siste sjekk 11.november
 - [x] Pages validate (HTML and CSS)
 - [ ] Mangler full validering til onskeliste.html
-- [ ] No code errors (test each page with the Console)
+- [x] No code errors (test each page with the Console)
 - [ ] Clear navigation structure
 - [ ] All features work correctly
-- [ ] No broken links
+- [x] No broken links
 - [ ] Appropriate comments (must be at top of each page, but also within CSS, JavaScript & HTML)
 - [ ] Proper nesting of code (CSS, HTML, and JavaScript)
 - [ ] No unnecessary duplication of code from page to page (use JavaScript to avoid this)
-- [ ] Appropriate ALT attributes for all images
-- [ ] All pages have appropriate titles
+- [x] Appropriate ALT attributes for all images
+- [x] All pages have appropriate titles
 - [ ] Aesthetically pleasing layout/color/font
 - [ ] Properly sized images with correct aspect ratio
 
