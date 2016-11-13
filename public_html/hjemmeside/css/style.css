@@ -3,7 +3,7 @@ FILE NAME: style.css
 WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
 WHEN: Oktober 2016
 UPDATED BY: Minh Ha Do
-WHEN: 11.11.16
+WHEN: 12.11.16
 PURPOSE: Styling*/
 html, body {
 	margin:0;
@@ -160,11 +160,13 @@ textarea {
 
 
 /*Minh Ha's CSS*/
+/*Index.html*/
 #index img{
     width: 50%;
     align-self: center;
 }
 
+/*bryllupsfest.html og vielse.html*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
@@ -174,11 +176,11 @@ textarea {
 .beliggenhet p{
   text-align: left;
   margin-left: 15px;
-    margin-bottom: 15px;
-    padding-left: 300px;
+  margin-bottom: 15px;
+  padding-left: 300px;
 }
 
-table{
+table{/*onskeliste, bryllupsfest og vielse*/
   border-collapse: collapse;
 	margin-bottom: 10px;
 }
@@ -191,12 +193,9 @@ table{
   margin-bottom: 15px;
   text-align: left;
   position: relative;
-  /*z-index: -1;*/
 }
 
 #info{
-  margin: 1em 0em 1em 1em
-  width: 50%;
   float: left;
 }
 
@@ -206,10 +205,9 @@ table{
   right: 10px;
   top: 20px;
   position: absolute;
-  /*z-index: -1;*/
 }
 
-#mapVielse,#mapFest {/*111. ndre plassering*/
+#mapVielse,#mapFest {
   height: 400px;
   width: 100%;
   border: 2px solid #e3cc9f;
@@ -288,13 +286,13 @@ footer {
         width: 70%;
         align-self: center;
     }
-    
+
     /* Scaling svg*/
     .svg{
         width: 40px;
         height: 40px;
     }
-    
+
     /* Scaling rsvp form */
     form {
     width: 500px;
