@@ -139,7 +139,7 @@ section {
     width: 430px;
     margin: auto;
     padding: 30px;
-    background-color: #e3cc9f;
+    background-color: #dabc80;
     text-align: left;
 
     border-width: 1px;
@@ -269,6 +269,7 @@ footer {
 	position:absolute;
 	bottom:0;
 	right:0;
+    font-size: 12px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px){
@@ -296,11 +297,17 @@ footer {
         align-self: center;
     }
 
-    /* Scaling svg*/
+    /* Scaling svg på vielse og fest*/
     .svg{
         width: 40px;
         height: 40px;
     }
+    
+    /* Scaling bilder i ønskeliste */
+    .imageon{
+	height: 200px;
+	width: 200px;
+    }  
 
     /* Scaling rsvp form */
     form {

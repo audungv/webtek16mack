@@ -1,7 +1,10 @@
-//FILE NAME: countdown.js
-//WRITTEN BY: Minh Ha Do
-//WHEN: November 2016
-//PURPOSE: Telle ned dager til vielsen
+/*
+FILE NAME: countdown.js
+WRITTEN BY: Minh Ha Do
+WHEN: November 2016
+PURPOSE: Telle ned dager til vielsen
+*/
+
 //Google Maps kode modifisert fra Google: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
 
 //Vielse

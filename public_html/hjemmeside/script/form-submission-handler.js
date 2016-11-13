@@ -1,8 +1,11 @@
-//FILE NAME: form-submission-handler.js
-//WRITTEN BY: Au-Dung Vuong
-//WHEN: November 2016
-//PURPOSE: Kode for å sende innhold fra svarskjema til et Google spreadsheet
-// Got code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+/*
+FILE NAME: form-submission-handler.js
+WRITTEN BY: Au-Dung Vuong
+WHEN: November 2016
+PURPOSE: Kode for å sende innhold fra svarskjema til et Google spreadsheet
+*/
+
+// Modifisert kode fra https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
