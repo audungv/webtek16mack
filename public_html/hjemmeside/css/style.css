@@ -129,29 +129,35 @@ section {
 
 
 /* RSVP-skjema */
-form {
+#rsvp p{
+    max-width: 430px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#rsvp form {
     width: 430px;
     margin: auto;
     padding: 30px;
-    background-color: #e3cc9f;
+    background-color: #dabc80;
     text-align: left;
 
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
 }
-label {
+#rsvp label {
     float: left;
     width: 140px;
 }
-input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+#rsvp input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
     height: 17px;
     margin: 2px;
     border-width: 1px;
     border-color: black;
 }
-textarea {
+#rsvp textarea {
     width: 420px;
     height: auto;
     border-width: 1px;
@@ -235,9 +241,10 @@ table{/*onskeliste, bryllupsfest og vielse*/
   padding: 20px;
   overflow: auto;
 }
-#onskeliste li:hover {
+
+#onskeliste li:hover, #onskeliste a:hover {
   background: #dabc80;
-    color: white;
+	color: #ffffff;
   cursor: pointer;
 }
 
@@ -263,6 +270,7 @@ footer {
 	position:absolute;
 	bottom:0;
 	right:0;
+    font-size: 12px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px){
@@ -290,11 +298,17 @@ footer {
         align-self: center;
     }
 
-    /* Scaling svg*/
+    /* Scaling svg på vielse og fest*/
     .svg{
         width: 40px;
         height: 40px;
     }
+    
+    /* Scaling bilder i ønskeliste */
+    .imageon{
+	height: 200px;
+	width: 200px;
+    }  
 
     /* Scaling rsvp form */
     form {

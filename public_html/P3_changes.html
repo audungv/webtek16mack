@@ -25,7 +25,7 @@ Filnavn: P3_changes.html
               <ul>
                 <li>Klientenes navn: Magnus og Monica</li>
                 <li>Kontaktperson: Monica Darvik</li>
-                <li>Navn på nettsiden: <a href="http://org.ntnu.no/webtek16mack/public_html/hjemmeside/">Magnus & Monica</a></li>
+                <li>Navn på nettsiden: <a href="http://org.ntnu.no/webtek16mack/public_html/hjemmeside/" target="_blank">Magnus & Monica</a></li>
               </ul>
         </section>
 
@@ -34,46 +34,50 @@ Filnavn: P3_changes.html
         <section>
             <h2> Endringer </h2>
             <p>
-                <b>Generelt:</b> Vi lagde nettsiden, med stort sett alle funksjonene og det utseende vi hadde planlagt. Den største endringer er at valgte å ikke ta med javascriptet for en "dropdown"-meny i navigasjonsbaren. Grunnen til dette er at javascriptet ikke gjorde navigasjonsbaren penere enn det som allerede var blitt gjort med kun html og css. Ellers er utseende på onskeliste.html litt annerledes og det er noen små fargeendringer på diverse steder.
+                <b>Generelt:</b> Vi lagde nettsiden, med stort sett alle funksjonene og det utseende vi hadde planlagt. Den største endringer er at valgte å ikke ta med javascriptet for en "dropdown"-meny i navigasjonsbaren, selv om den var ferdig og fungerte som den skulle. Grunnen til dette er at javascriptet ikke gjorde navigasjonsbaren penere enn det som allerede var blitt gjort med kun html og css. Ellers er utseende på onskeliste.html litt annerledes og det er noen små fargeendringer på diverse steder.
             </p>
 
             <p>
-                <b>index.html:</b> Nedteller er plassert et annet sted og er alltid synlig
+                <b>index.html:</b> Nedtelleren for vielsen ble flyttet under datoene og har samme farger som linker.
             </p>
             <p>
                 <b>var_historie.html:</b> Hendelsene ble plassert i kronologisk rekkefølge fordi vi syns det ble mer ryddig på den måten.
             </p>
             <p>
-                <b>vielse.html:</b> Infoboksen til venstre ble ikke fylt
+                <b>bryllupsfest.html:</b> Dato og klokkeslett er ikke publisert etter kundens ønske. Bakgrunnsfargen og posisjonene til ikonene i infoboksen er endret slik at siden blir mer stilren. I tillegg er det lagdt til en bord rundt Google kartet for mer synlighet mellom bakgrunn og kart.
+            <p>
+                <b>onskeliste.html:</b> I stedet for å legge til et hyperlink-element til hvert ønske som gjestene kan trykke på, bestemte vi oss for å gjøre hvert ønske (med bilde, overskrift og info) til en "knapp". Denne knappen skifter farge til #dabc80 og fonten skifter farge til hvit når musepekeren er over den, noe som gjør det svært synlig.
             </p>
             <p>
-                <b>bryllupsfest.html:</b> Infoboksen til venstre ble ikke fylt
+                <b>rsvp.html:</b> La til dato for svarfrist. Både kunde og prosjektgruppa hadde glemt dette da vi skrev P2.
             </p>
             <p>
-                <b>onskeliste.html:</b> I stedet for å legge til et hyperlink-element til hvert ønske som gjestene kan trykke på, bestemte vi oss for å gjøre hvert ønske (med bilde, overskrift og info) til en "knapp". Denne knappen skifter farge når musepekeren er over den, noe som gjør det svært synlig.
+                <b>Logo og bord: </b> Vi tegnet en logo, men valgte å ikke bruke den fordi logoen vi fant på internett var mye finere. Vi hadde tenkt litt på å lage en bord til nettsiden, men gikk ikke videre med denne idéen fordi vi ikke klarte  å finne noe som ikke gjorde siden vår tacky og rotete.
             </p>
             <p>
-                <b>countdown.js:</b> Vi lagde bare en nedteller til vielsen. Kunden ville ikke ha datoen for bryllupsfesten synlig på hjemmesiden. Dessuten kunne det blitt rotete med to nedtellere.
+                <b>countdown.js:</b> Kunden syntes det var greit å publisere datoen til vielsen, dermed ble det lagd en dagsnedteller til vielsen. Kunden ville ikke ha datoen for bryllupsfesten synlig på hjemmesiden, dermed ble en nedteller for festen droppet. Dessuten kunne det blitt rotete med to nedtellere. Etterfulgt av disse endingrene droppet vi at nedtelleren skulle ta plass ved siden av datoen ved hover-over på datoen, fordi det nå bare var en nedteller og da vil det være enklere og synligere om den alltid er tilstede.
             </p>
             <p>
-                <b>form-submission-handler.js:</b> I tillegg til å legge info fra svarskjema inn i et Google spreadsheet, blir også infoen sendt på e-post Magnus. På den måten blir brudeparet varslet dersom noen gjester skulle svare på invitasjonen senere enn forventet.
+                <b>form-submission-handler.js:</b> All info fra svarskjemaet blir automatisk lagt inn i et Google spreadsheet, slik som kunden ønsket. I tillegg blir også infoen sendt på e-post Magnus. Dette var ikke planlagt, men vi tenkte dette var lurt fordi brudeparet blir varslet dersom noen gjester skulle svare på invitasjonen senere enn forventet.
             </p>
             <p>
-                <b>form_validering.js:</b> I tillegg til å validere formatet på input, sier nettsiden også ifra (i mens man fyller ut skjema) hvis noe er feil.
+                <b>form_validering.js:</b> Koden validerer formatet på input og sier ifra (i mens man fyller ut skjema) hvis noe er feil. Vi ville ha live validering slik at brukeren slipper å få feilmeldingene etter at de har trykket på send-knappen.
             </p>
             <p>
-                <b>googleMaps.js:</b> Lagde en kode for å inkludere et Google Maps-kart som viser hvor vielsen og bryllupsfesten skal være.
+                <b>googleMaps.js:</b> Lagde en kode for å inkludere et interaktivt Google Maps-kart som viser hvor vielsen og bryllupsfesten skal være.
             </p>
             <div>
-                <b>Endringer i styling:</b> Endret vi no farger eller lignende?
+                <b>Endringer i styling:</b> Det er blitt gjort mindre stylingendringer på nettsiden for å gjøre siden mer stilren eller lettleselig.
                 <ul>
-                    <li>Navigasjonsbar: ble gjort mindre gjennomsiktig.</li>
-                    <li>Marger for de forskjellige sidene</li>
-                    <li>Nedteller til vielse gjort synligere med bold og lysere farge</li>
+                    <li>Font: Brukte 36px til overskrifter, 12px til fotnote og 16px til all annen skrift.</li>
+                    <li>Farger: navigasjonsbar ble 90% transparent i stedet for 70%. Vi hadde planlagt at at navnet på siden man besøkte skulle ha fargen #b07500 i navigasjonsbaren, men droppet dette fordi css bare ville la oss gjøre skriften fet og ikke skifte farge. Vi syns ikke dette var fint nok, så lot være å gjøre det. </li>
+                    <li>Minimumsbredde: Generelt dekker sider med mye innhold 60% av nettleservinduet, mens sider med lite innhold dekker 35% av vinduet. Svarskjema er alltid 430px. Alle store objekter er midstilt. </li>
+                    <li>Styling på mobil: Det var ikke et krav fra kunden å lage en mobilvennlig side. Vi har ikke fokusert veldig på dette, men likevel lagt til noen få linjer slik at nettsiden skal se brukbar ut på de største mobilnettleserene. Det er ingen generelle regler bortsett fra at sider med mye og lite innhold dekker hhv. 70% og 50% slik at innholdet ikke skal se så smalt ut.</li>
                 </ul>
+
             </div>
             <p>
-                <b>Modulær kode:</b> Vi brukte javascript for å gjøre koden modulær. Kode for navigasjonsbar og fotnote ble laget i hver sin html-fil, navbar.html og footer.html. Disse ble inkludert i alle sidene ved bruk av to javascript-funksjoner i script.js.
+                <b>Modulær kode:</b> Vi brukte javascript for å gjøre koden modulær. Kode for navigasjonsbar og fotnote ble laget i hver sin html-fil, navbar.html og footer.html. Disse ble inkludert i alle sidene ved bruk av to javascript-funksjoner i modular.js.
             </p>
         </section>
 
