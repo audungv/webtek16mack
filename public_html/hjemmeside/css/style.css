@@ -241,7 +241,10 @@ table{/*onskeliste, bryllupsfest og vielse*/
   cursor: pointer;
 }
 
-
+.imageon{
+	height: 250px;
+	width: 250px;
+}
 
 /* Cat's CSS*/
 
