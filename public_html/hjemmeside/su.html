@@ -3,16 +3,16 @@
 FILE NAME: rsvp.html
 WRITTEN BY: Au-Dung Vuong
 WHEN: Oktober 2016
-UPDATED BY: Catriona Tørklep
+MODIFIED BY: Catriona Tørklep
 WHEN: November 2016
 PURPOSE: Svarskjema -->
 <html>
     <head>
-        <title>RSVP</title>
+        <title>S.U.</title>
         <meta charset="utf-8" />
         <link href="css/style.css" rel="stylesheet">
         <link rel="icon"  href="img/favikon.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
     </head>
 
     <body>
@@ -25,14 +25,14 @@ PURPOSE: Svarskjema -->
 
            <!-- Sidens innhold -->
            <section id="rsvp">
-            <h1> RSVP </h1>
-            <p> Vennligst gi oss svar på om du har mulighet til å komme i vielsen og bryllupet innen 3. februar 2017. </p>
+            <h1> S.U. </h1>
+            <p id="suContent"> Svar utbedes innen 1. mars </p>
             <form id="gform" name="rsvpForm" method="post" onclick="validateForm()" action="https://script.google.com/macros/s/AKfycbymQMlkNIeXZtiltanHTPOWMxPPBIZYFBUJk4A0V-T5Nlur_0o/exec">
-                <label>Kontaktperson: * </label>  <input type="text" name="name" id="name"  onblur="validateName()"  pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
-                <label>Telefon: * </label>        <input type="text" name="phone" id="phone" onblur="validatePhone()" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom."  required><br>
-                <label>E-mail: * </label>         <input type="email" name="email" id="email" onblur="validateEmail()" required><br>
-                <label>Tar med seg: </label>    <input type="text" name="guests"><br>
-                <br>
+                <label for="name">Navn: * </label>  <input type="text" name="name" id="name"  onblur="validateName()"  pattern="[A-z-\søæåØÆÅ]+" title="Navnet kan ikke inneholde spesialtegn." required><br>
+                <label for="phone">Telefon: * </label>        <input type="text" name="phone" id="phone" onblur="validatePhone()" pattern="[0-9+\s]+" title="Telefonnummer kan bare inneholde tall, + og mellomrom."  required><br>
+                <label for="email">E-mail: * </label>         <input type="email" name="email" id="email" onblur="validateEmail()" required><br>
+                <label for="guests">Navn på andre gjester: </label>    <input type="text" name="guests" id="guests"><br>
+                <br><br>
 
                 Kommer til: <br>
                 <label>Vielsen * </label>         <input type="radio" name="wedding" id="wedJa" value="true" required> Ja
@@ -42,7 +42,11 @@ PURPOSE: Svarskjema -->
                 <br>
 
 
-                <label>Matallergier/spesialdietter: </label><br>    <textarea name="allergy"></textarea>
+                <label for="allergy">Matallergier/spesialdietter: </label><br>    <textarea name="allergy" id="allergy"></textarea>
+                <br><br>
+                
+                Ønsker du at vi ordner buss fra Trondheim sentrum til festlokalet? I så fall, hvor mange plasser? Påmelding er bindende. <br>
+                <textarea name="transport" id="transport"></textarea>
                 <br>
 
                 <input type="submit" id="submit" name="submit" value="Send"/>
@@ -69,14 +73,10 @@ PURPOSE: Svarskjema -->
 
         </div>
 
-        <!-- Script for å gjøre koden modulær -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script src="script/modular.js"></script>
-        
-        <!-- Validering  av skjema -->
-        <script src="script/form_validering.js"></script>
-        
         <!-- Submit the Form to Google Using "AJAX" -->
-        <script data-cfasync="false" src="script/form-submission-handler.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="script/form-submission-handler.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/form_validering.js"></script>
     </body>
 </html>

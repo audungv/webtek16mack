@@ -1,11 +1,9 @@
 /*
 FILE NAME: form-submission-handler.js
-WRITTEN BY: Au-Dung Vuong
-WHEN: November 2016
-PURPOSE: Kode for å sende innhold fra svarskjema til et Google spreadsheet
+WRITTEN BY: Got code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+WHEN: november 2016
+PURPOSE: Inserts form data to Google spreadsheet when submitted
 */
-
-// Modifisert kode fra https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -38,7 +36,7 @@ function getFormData() {
       }
     }
   });
-  console.log(data);
+  //console.log(data);
   return data;
 }
 
@@ -55,9 +53,10 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     // xhr.withCredentials = true;
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
-        console.log( xhr.status, xhr.statusText )
-        console.log(xhr.responseText);
+        //console.log( xhr.status, xhr.statusText )
+        //console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
+        document.getElementById('suContent').style.display = 'none'; // hide content
         document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
@@ -69,7 +68,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
 }
 function loaded() {
-  console.log('contact form submission handler loaded successfully');
+  //console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('gform');
   form.addEventListener("submit", handleFormSubmit, false);
