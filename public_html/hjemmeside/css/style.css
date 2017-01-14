@@ -3,7 +3,7 @@ FILE NAME: style.css
 WRITTEN BY: M. Do, K. Duong, C. Tørklep og A. Vuong
 WHEN: Oktober 2016
 UPDATED BY: Minh Ha Do
-WHEN: 12.11.16
+WHEN: 11.11.16
 PURPOSE: Styling*/
 html, body {
 	margin:0;
@@ -129,35 +129,29 @@ section {
 
 
 /* RSVP-skjema */
-#rsvp p{
-    max-width: 430px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-}
-#rsvp form {
+form {
     width: 430px;
     margin: auto;
     padding: 30px;
-    background-color: #dabc80;
+    background-color: #e3cc9f;
     text-align: left;
 
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
 }
-#rsvp label {
+label {
     float: left;
     width: 140px;
 }
-#rsvp input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
+input[name="name"], input[name="phone"], input[name="email"], input[name="guests"] {
     width: 280px;
     height: 17px;
     margin: 2px;
     border-width: 1px;
     border-color: black;
 }
-#rsvp textarea {
+textarea {
     width: 420px;
     height: auto;
     border-width: 1px;
@@ -166,13 +160,11 @@ section {
 
 
 /*Minh Ha's CSS*/
-/*Index.html*/
 #index img{
-  width: 50%;
-  align-self: center;
+    width: 50%;
+    align-self: center;
 }
 
-/*bryllupsfest.html og vielse.html*/
 .beliggenhet{
   margin: auto;
   margin-top: 130px;
@@ -182,11 +174,11 @@ section {
 .beliggenhet p{
   text-align: left;
   margin-left: 15px;
-  margin-bottom: 15px;
-  padding-left: 300px;
+    margin-bottom: 15px;
+    padding-left: 300px;
 }
 
-table{/*onskeliste, bryllupsfest og vielse*/
+table{
   border-collapse: collapse;
 	margin-bottom: 10px;
 }
@@ -199,9 +191,12 @@ table{/*onskeliste, bryllupsfest og vielse*/
   margin-bottom: 15px;
   text-align: left;
   position: relative;
+  /*z-index: -1;*/
 }
 
 #info{
+  margin: 1em 0em 1em 1em
+  width: 50%;
   float: left;
 }
 
@@ -211,9 +206,10 @@ table{/*onskeliste, bryllupsfest og vielse*/
   right: 10px;
   top: 20px;
   position: absolute;
+  /*z-index: -1;*/
 }
 
-#mapVielse,#mapFest {
+#mapVielse,#mapFest {/*111. ndre plassering*/
   height: 400px;
   width: 100%;
   border: 2px solid #e3cc9f;
@@ -241,17 +237,13 @@ table{/*onskeliste, bryllupsfest og vielse*/
   padding: 20px;
   overflow: auto;
 }
-
-#onskeliste li:hover, #onskeliste a:hover {
+#onskeliste li:hover {
   background: #dabc80;
-	color: #ffffff;
+    color: white;
   cursor: pointer;
 }
 
-.imageon{
-	height: 250px;
-	width: 250px;
-}
+
 
 /* Cat's CSS*/
 
@@ -270,7 +262,6 @@ footer {
 	position:absolute;
 	bottom:0;
 	right:0;
-    font-size: 12px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px){
@@ -297,19 +288,13 @@ footer {
         width: 70%;
         align-self: center;
     }
-
-    /* Scaling svg på vielse og fest*/
+    
+    /* Scaling svg*/
     .svg{
         width: 40px;
         height: 40px;
     }
     
-    /* Scaling bilder i ønskeliste */
-    .imageon{
-	height: 200px;
-	width: 200px;
-    }  
-
     /* Scaling rsvp form */
     form {
     width: 500px;
